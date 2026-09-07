@@ -104,10 +104,11 @@ chi-square significant (p < 0.001) ว่า theme distribution ต่างก�
 ### Phase 4 — Deploy
 - [x] สร้าง repo บน GitHub (`brightza234/employer-brand-perception`, public), push โค้ดแล้ว
 - [x] เชื่อม Vercel กับ GitHub repo — คำแนะนำให้ user ทำเอง (ต้อง OAuth ด้วยบัญชีตัวเอง)
-- [ ] ตั้งค่า environment variables ใน Vercel (API keys) — **ห้าม commit .env ขึ้น GitHub เด็ดขาด**
+- [x] ตั้งค่า environment variables ใน Vercel (API keys) — **ห้าม commit .env ขึ้น GitHub เด็ดขาด**
 - [x] ตัดสินใจเรื่อง `data/processed_insights.json` — commit ขึ้น repo แล้ว (ผู้ใช้ยืนยันแล้วว่า
       ok เพราะเป็นข้อมูล public + สรุป/ตัวอย่างเท่านั้น ไม่ใช่ raw data ทั้งหมด)
-- [ ] ตรวจสอบว่า deploy สำเร็จ ได้ live URL
+- [x] ตรวจสอบว่า deploy สำเร็จ ได้ live URL — **https://employer-brand-perception.vercel.app**
+      ทดสอบทุกหน้า + AI Executive Summary บน production แล้ว ทำงานถูกต้องทั้งหมด
 
 ### Phase 5 — Polish (สำคัญสำหรับสัมภาษณ์)
 - [ ] เขียน README.md อธิบาย methodology + ทำไมถึงเลือก theme taxonomy นี้ (เชื่อมกับ HR background)
