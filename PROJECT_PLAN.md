@@ -75,12 +75,15 @@
       เพราะรอ Phase 1 รันเก็บข้อมูลจริงก่อน (ต้องมี `ANTHROPIC_API_KEY` ด้วย)
 
 ### Phase 3 — Dashboard (Next.js)
-- [ ] หน้า Overview: sentiment score ต่อบริษัท (gauge/bar chart)
-- [ ] หน้า Theme Breakdown: stacked bar/pie ต่อหมวด
-- [ ] หน้า Trend: line chart sentiment over time
-- [ ] Panel "AI Executive Summary" — เรียก Claude API สรุป insight เป็นย่อหน้า (ตรงกับ JD ที่บอก
-      "feed data ให้ AI วิเคราะห์เป็นก็จบ")
-- [ ] แสดงตัวอย่าง comment จริงประกอบแต่ละหมวด (2-3 ตัวอย่าง)
+- [x] หน้า Overview: sentiment score ต่อบริษัท (stacked bar chart) + summary cards
+- [x] หน้า Theme Breakdown: stacked bar ต่อหมวด + chi-square test result
+- [x] หน้า Trend: line chart net sentiment score ต่อเดือน
+- [x] Panel "AI Executive Summary" — เรียก Claude API (`/api/summary`) สรุป insight เป็นย่อหน้า
+- [x] แสดงตัวอย่าง comment จริงประกอบแต่ละหมวด (3 ตัวอย่าง/บริษัท/หมวด)
+
+ทดสอบด้วย synthetic data ผ่าน browser แล้ว (build ผ่าน, ทุกหน้า render ถูกต้อง, empty state
+ทำงานเมื่อยังไม่มี `data/processed_insights.json`, API route จัดการ error กรณีไม่มี
+`ANTHROPIC_API_KEY` ได้ถูกต้อง) — ยังไม่เคยเห็นข้อมูลจริงเพราะรอ Phase 1-2 รันจริง
 
 ### Phase 4 — Deploy
 - [ ] สร้าง repo บน GitHub, `git remote add origin ...`, `git push -u origin main`
