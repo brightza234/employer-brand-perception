@@ -47,7 +47,8 @@ __pycache__/
 .venv/
 venv/
 
-# collected/raw data (contains scraped third-party content)
+# raw/intermediate scraped data — not needed for the deployed dashboard,
+# and raw_comments.json holds far more third-party text than the curated
+# samples in processed_insights.json (which IS committed, see below)
 /data/raw_comments.json
 /data/classified_comments.json
-/data/processed_insights.json
