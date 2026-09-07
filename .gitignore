@@ -49,4 +49,5 @@ venv/
 
 # collected/raw data (contains scraped third-party content)
 /data/raw_comments.json
+/data/classified_comments.json
 /data/processed_insights.json

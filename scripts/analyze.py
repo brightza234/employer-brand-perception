@@ -22,6 +22,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 from config import COMPANIES, SENTIMENTS, THEMES
 
 RAW_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "raw_comments.json")
+CLASSIFIED_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "classified_comments.json")
 OUT_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "processed_insights.json")
 MODEL = "claude-haiku-4-5-20251001"
 BATCH_SIZE = 10
@@ -48,6 +49,22 @@ comment, in the same order, each shaped like:
 def load_raw_records() -> list[dict]:
     with open(RAW_PATH, "r", encoding="utf-8") as f:
         return json.load(f)
+
+
+def load_classified_cache() -> dict:
+    """Records already classified in a previous run, keyed by id — so re-running
+    only classifies new comments instead of re-spending API calls on ones we
+    already have an answer for."""
+    if not os.path.exists(CLASSIFIED_PATH):
+        return {}
+    with open(CLASSIFIED_PATH, "r", encoding="utf-8") as f:
+        records = json.load(f)
+    return {r["id"]: r for r in records}
+
+
+def save_classified_cache(records_by_id: dict) -> None:
+    with open(CLASSIFIED_PATH, "w", encoding="utf-8") as f:
+        json.dump(list(records_by_id.values()), f, ensure_ascii=False, indent=2)
 
 
 def strip_json_fences(text: str) -> str:
@@ -89,8 +106,10 @@ def classify_all(client: Anthropic, records: list[dict]) -> list[dict]:
     return classified
 
 
-def month_bucket(iso_date: str) -> str:
-    return iso_date[:7]  # "YYYY-MM"
+def quarter_bucket(iso_date: str) -> str:
+    year = iso_date[:4]
+    month = int(iso_date[5:7])
+    return f"{year}-Q{(month - 1) // 3 + 1}"
 
 
 def build_company_insights(records: list[dict], raw_total: int) -> dict:
@@ -99,7 +118,7 @@ def build_company_insights(records: list[dict], raw_total: int) -> dict:
 
     trend = collections.defaultdict(lambda: collections.Counter())
     for r in records:
-        trend[month_bucket(r["date"])][r["sentiment"]] += 1
+        trend[quarter_bucket(r["date"])][r["sentiment"]] += 1
     trend_series = [
         {"period": period, **{s: trend[period].get(s, 0) for s in SENTIMENTS}}
         for period in sorted(trend.keys())
@@ -161,7 +180,17 @@ def main() -> None:
     raw_records = load_raw_records()
     print(f"[analyze] {len(raw_records)} raw records loaded")
 
-    classified = classify_all(client, raw_records)
+    cache = load_classified_cache()
+    to_classify = [r for r in raw_records if r["id"] not in cache]
+    print(f"[analyze] {len(raw_records) - len(to_classify)} already classified (cached), {len(to_classify)} new")
+
+    if to_classify:
+        newly_classified = classify_all(client, to_classify)
+        for r in newly_classified:
+            cache[r["id"]] = r
+        save_classified_cache(cache)
+
+    classified = [cache[r["id"]] for r in raw_records if r["id"] in cache]
     relevant = [r for r in classified if r.get("employer_related")]
     print(
         f"[analyze] {len(classified)} records classified, "

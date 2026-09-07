@@ -6,7 +6,7 @@ const PALETTE = ["#2563eb", "#7c3aed", "#db2777", "#ea580c", "#16a34a", "#0891b2
 
 export interface TrendRow {
   period: string;
-  [company: string]: string | number;
+  [company: string]: string | number | null;
 }
 
 export default function TrendChart({ data, companies }: { data: TrendRow[]; companies: string[] }) {

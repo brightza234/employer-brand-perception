@@ -20,8 +20,9 @@ export async function POST(request: NextRequest) {
 
   const prompt = `You are an HR/employer-branding analyst. Given this aggregated data about how
 people talk about "${company}" as an employer on social media, write a concise executive
-summary (3-5 sentences, plain prose, no headers or bullet points) covering the overall
-sentiment, the most prominent themes, and one notable risk or opportunity.
+summary (3-5 sentences) covering the overall sentiment, the most prominent themes, and one
+notable risk or opportunity. Respond with ONLY the paragraph itself: plain prose, no title,
+no markdown formatting (no #, no **, no bullet points) — just sentences.
 
 Data:
 ${JSON.stringify(
@@ -40,6 +41,12 @@ ${JSON.stringify(
     messages: [{ role: "user", content: prompt }],
   });
 
-  const summary = response.content[0].type === "text" ? response.content[0].text : "";
+  const rawSummary = response.content[0].type === "text" ? response.content[0].text : "";
+  // strip a stray markdown heading/bold if the model adds one despite instructions —
+  // the panel renders this as plain text, not markdown
+  const summary = rawSummary
+    .replace(/^#{1,6}\s+.*\n+/, "")
+    .replace(/\*\*/g, "")
+    .trim();
   return NextResponse.json({ summary });
 }

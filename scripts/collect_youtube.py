@@ -8,6 +8,7 @@ Requires YOUTUBE_API_KEY in .env.local.
 
 import datetime
 import os
+import re
 import sys
 
 from dotenv import load_dotenv
@@ -25,7 +26,10 @@ COMMENTS_PER_VIDEO = 50
 def search_videos(youtube, query: str, match_terms: list[str], max_results: int) -> list[str]:
     """Search for videos and keep only ones whose title actually mentions the company —
     YouTube's search endpoint ranks loosely on multi-word queries and otherwise returns
-    plenty of irrelevant results."""
+    plenty of irrelevant results. Word-boundary match so e.g. "grab" doesn't match
+    "grabbing" — matching English common-word brand names still risks false positives
+    like "let's grab lunch", which the Claude relevance step downstream filters out."""
+    patterns = [re.compile(r"\b" + re.escape(term) + r"\b", re.IGNORECASE) for term in match_terms]
     response = (
         youtube.search()
         .list(q=query, part="snippet", type="video", maxResults=max_results)
@@ -33,8 +37,8 @@ def search_videos(youtube, query: str, match_terms: list[str], max_results: int)
     )
     video_ids = []
     for item in response.get("items", []):
-        title = item["snippet"]["title"].lower()
-        if any(term in title for term in match_terms):
+        title = item["snippet"]["title"]
+        if any(p.search(title) for p in patterns):
             video_ids.append(item["id"]["videoId"])
     return video_ids
 
