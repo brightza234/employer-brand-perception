@@ -66,13 +66,13 @@
       เพราะรอ user ใส่ API key ใน `.env.local` ก่อน (`python scripts/collect_all.py` เพื่อรันทั้งหมด)
 
 ### Phase 2 — Analysis
-- [ ] เขียน `scripts/analyze.py` — ส่ง comment แต่ละอันไป Claude API เพื่อ:
-  - classify sentiment (positive/neutral/negative)
-  - classify theme (จาก taxonomy ด้านบน)
-  - ให้คะแนน confidence
-- [ ] คำนวณสถิติ: sentiment distribution ต่อบริษัท, theme frequency, trend ตามเวลา
-- [ ] เขียนผลลัพธ์เป็น `data/processed_insights.json`
-- [ ] (ถ้ามีเวลา) ทำ statistical test เปรียบเทียบบริษัท เช่น chi-square ว่า theme distribution ต่างกันมีนัยสำคัญไหม
+- [x] เขียน `scripts/analyze.py` — ส่ง comment เป็น batch (10 comment/call) ไป Claude
+      (`claude-haiku-4-5-20251001`) เพื่อ classify sentiment + theme + confidence
+- [x] คำนวณสถิติ: sentiment distribution ต่อบริษัท, theme frequency, trend รายเดือน
+- [x] เขียนผลลัพธ์เป็น `data/processed_insights.json`
+- [x] chi-square test (`scipy.stats.chi2_contingency`) เปรียบเทียบ theme distribution ระหว่างบริษัท
+      — โค้ดเขียนและ smoke-test ด้วยข้อมูลสมมติแล้ว แต่ยังไม่เคยรันกับข้อมูลจริง
+      เพราะรอ Phase 1 รันเก็บข้อมูลจริงก่อน (ต้องมี `ANTHROPIC_API_KEY` ด้วย)
 
 ### Phase 3 — Dashboard (Next.js)
 - [ ] หน้า Overview: sentiment score ต่อบริษัท (gauge/bar chart)

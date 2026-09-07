@@ -1,4 +1,15 @@
-"""Shared config: target companies and per-source search terms."""
+"""Shared config: target companies, search terms, and analysis taxonomy."""
+
+THEMES = [
+    "Compensation & Benefits",
+    "Work-Life Balance",
+    "Management & Leadership",
+    "Career Growth & Development",
+    "Company Culture",
+    "Job Security & Stability",
+]
+
+SENTIMENTS = ["positive", "neutral", "negative"]
 
 COMPANIES = [
     {
