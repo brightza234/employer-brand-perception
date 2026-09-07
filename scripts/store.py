@@ -8,13 +8,30 @@ of duplicating records.
 import hashlib
 import json
 import os
+import re
 
 DATA_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "raw_comments.json")
+
+MIN_LENGTH = 15
+MIN_LETTERS = 10
+_LETTER_RE = re.compile(r"[^\W\d_]", re.UNICODE)
 
 
 def make_id(source: str, url: str, text: str) -> str:
     key = f"{source}|{url}|{text[:200]}"
     return hashlib.sha1(key.encode("utf-8")).hexdigest()[:16]
+
+
+def is_meaningful_comment(text: str) -> bool:
+    """Drop junk that isn't worth an API call: emoji-only reactions, bare
+    timestamps/numbers, one-word replies. Can't judge topical relevance —
+    that's what the Claude classification step is for."""
+    stripped = text.strip()
+    if len(stripped) < MIN_LENGTH:
+        return False
+    if len(_LETTER_RE.findall(stripped)) < MIN_LETTERS:
+        return False
+    return True
 
 
 def load_records() -> dict:
@@ -37,6 +54,8 @@ def merge_new_records(new_records: list[dict]) -> tuple[int, int]:
     existing = load_records()
     added = 0
     for r in new_records:
+        if not is_meaningful_comment(r["text"]):
+            continue
         if r["id"] not in existing:
             added += 1
         existing[r["id"]] = r

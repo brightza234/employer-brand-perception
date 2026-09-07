@@ -16,6 +16,7 @@ export interface SampleComment {
 
 export interface CompanyInsights {
   total_comments: number;
+  total_raw_comments: number;
   sentiment_distribution: Record<Sentiment, number>;
   theme_distribution: Record<string, number>;
   trend: TrendPoint[];

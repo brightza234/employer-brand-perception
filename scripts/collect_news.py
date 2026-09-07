@@ -47,7 +47,7 @@ def collect_for_company(api_key: str, company: dict) -> list[dict]:
                 "text": text,
                 "date": article["publishedAt"],
                 "url": article["url"],
-                "collected_at": datetime.datetime.utcnow().isoformat() + "Z",
+                "collected_at": datetime.datetime.now(datetime.timezone.utc).isoformat().replace("+00:00", "Z"),
             }
         )
 

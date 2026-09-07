@@ -47,9 +47,9 @@ def collect_for_company(reddit: praw.Reddit, company: dict) -> list[dict]:
                     "source": "reddit",
                     "company": company["name"],
                     "text": text,
-                    "date": datetime.datetime.utcfromtimestamp(submission.created_utc).isoformat() + "Z",
+                    "date": datetime.datetime.fromtimestamp(submission.created_utc, datetime.timezone.utc).isoformat().replace("+00:00", "Z"),
                     "url": f"https://reddit.com{submission.permalink}",
-                    "collected_at": datetime.datetime.utcnow().isoformat() + "Z",
+                    "collected_at": datetime.datetime.now(datetime.timezone.utc).isoformat().replace("+00:00", "Z"),
                 }
             )
 
@@ -64,9 +64,9 @@ def collect_for_company(reddit: praw.Reddit, company: dict) -> list[dict]:
                     "source": "reddit",
                     "company": company["name"],
                     "text": body,
-                    "date": datetime.datetime.utcfromtimestamp(comment.created_utc).isoformat() + "Z",
+                    "date": datetime.datetime.fromtimestamp(comment.created_utc, datetime.timezone.utc).isoformat().replace("+00:00", "Z"),
                     "url": f"https://reddit.com{submission.permalink}{comment.id}/",
-                    "collected_at": datetime.datetime.utcnow().isoformat() + "Z",
+                    "collected_at": datetime.datetime.now(datetime.timezone.utc).isoformat().replace("+00:00", "Z"),
                 }
             )
 

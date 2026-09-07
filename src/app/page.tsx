@@ -40,7 +40,9 @@ export default function OverviewPage() {
               <p className="mt-1 text-2xl font-semibold">
                 {insights.companies[company].total_comments}
               </p>
-              <p className="text-xs text-foreground/50">comments analyzed</p>
+              <p className="text-xs text-foreground/50">
+                employer-related, of {insights.companies[company].total_raw_comments} mentions found
+              </p>
             </div>
           ))}
         </div>

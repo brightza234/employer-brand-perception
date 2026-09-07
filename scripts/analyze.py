@@ -28,18 +28,20 @@ BATCH_SIZE = 10
 SAMPLES_PER_THEME = 3
 
 CLASSIFY_PROMPT = f"""You are labeling social media comments about companies as employers, for an
-HR/employer-branding analysis. For each numbered comment below, classify:
+HR/employer-branding analysis. Many comments are NOT about the company as a workplace at all —
+they're about its product, app, stock price, a building, or generic reactions to a video. For
+each numbered comment below, classify:
 
-- sentiment: one of {SENTIMENTS}
-- theme: the single best-fit category from {THEMES}, or "Other" if none apply
+- employer_related: true only if the comment expresses something about what it's like to work
+  there, apply there, or be an employee/candidate (pay, hours, management, culture, growth,
+  stability). false for product/customer/stock/building/off-topic comments.
+- sentiment: one of {SENTIMENTS} (sentiment of the comment overall)
+- theme: if employer_related is true, the single best-fit category from {THEMES}; otherwise "Other"
 - confidence: your confidence in the theme classification, 0.0-1.0
 
 Respond with ONLY a JSON array (no markdown fences, no commentary), one object per
 comment, in the same order, each shaped like:
-{{"sentiment": "...", "theme": "...", "confidence": 0.0}}
-
-Comments:
-{{comments_block}}
+{{"employer_related": true, "sentiment": "...", "theme": "...", "confidence": 0.0}}
 """
 
 
@@ -57,7 +59,7 @@ def strip_json_fences(text: str) -> str:
 
 def classify_batch(client: Anthropic, texts: list[str]) -> list[dict]:
     comments_block = "\n".join(f"{i + 1}. {t[:1000]}" for i, t in enumerate(texts))
-    prompt = CLASSIFY_PROMPT.format(comments_block=comments_block)
+    prompt = f"{CLASSIFY_PROMPT}\n\nComments:\n{comments_block}"
 
     response = client.messages.create(
         model=MODEL,
@@ -91,7 +93,7 @@ def month_bucket(iso_date: str) -> str:
     return iso_date[:7]  # "YYYY-MM"
 
 
-def build_company_insights(company_name: str, records: list[dict]) -> dict:
+def build_company_insights(records: list[dict], raw_total: int) -> dict:
     sentiment_counts = collections.Counter(r["sentiment"] for r in records)
     theme_counts = collections.Counter(r["theme"] for r in records)
 
@@ -113,6 +115,7 @@ def build_company_insights(company_name: str, records: list[dict]) -> dict:
 
     return {
         "total_comments": len(records),
+        "total_raw_comments": raw_total,
         "sentiment_distribution": {s: sentiment_counts.get(s, 0) for s in SENTIMENTS},
         "theme_distribution": {t: theme_counts.get(t, 0) for t in THEMES + ["Other"]},
         "trend": trend_series,
@@ -159,17 +162,22 @@ def main() -> None:
     print(f"[analyze] {len(raw_records)} raw records loaded")
 
     classified = classify_all(client, raw_records)
-    print(f"[analyze] {len(classified)} records classified")
+    relevant = [r for r in classified if r.get("employer_related")]
+    print(
+        f"[analyze] {len(classified)} records classified, "
+        f"{len(relevant)} employer-related ({len(classified) - len(relevant)} off-topic, excluded from stats)"
+    )
 
     insights = {
-        "generated_at": datetime.datetime.utcnow().isoformat() + "Z",
+        "generated_at": datetime.datetime.now(datetime.timezone.utc).isoformat().replace("+00:00", "Z"),
         "companies": {
             company["name"]: build_company_insights(
-                company["name"], [r for r in classified if r["company"] == company["name"]]
+                [r for r in relevant if r["company"] == company["name"]],
+                sum(1 for r in classified if r["company"] == company["name"]),
             )
             for company in COMPANIES
         },
-        "chi_square_theme_test": chi_square_theme_test(classified),
+        "chi_square_theme_test": chi_square_theme_test(relevant),
     }
 
     os.makedirs(os.path.dirname(OUT_PATH), exist_ok=True)

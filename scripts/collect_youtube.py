@@ -18,17 +18,25 @@ sys.path.insert(0, os.path.dirname(__file__))
 from config import COMPANIES
 from store import make_id, merge_new_records
 
-VIDEOS_PER_COMPANY = 10
+VIDEOS_PER_QUERY = 15
 COMMENTS_PER_VIDEO = 50
 
 
-def search_videos(youtube, query: str, max_results: int) -> list[str]:
+def search_videos(youtube, query: str, match_terms: list[str], max_results: int) -> list[str]:
+    """Search for videos and keep only ones whose title actually mentions the company —
+    YouTube's search endpoint ranks loosely on multi-word queries and otherwise returns
+    plenty of irrelevant results."""
     response = (
         youtube.search()
-        .list(q=query, part="id", type="video", maxResults=max_results, relevanceLanguage="en")
+        .list(q=query, part="snippet", type="video", maxResults=max_results)
         .execute()
     )
-    return [item["id"]["videoId"] for item in response.get("items", [])]
+    video_ids = []
+    for item in response.get("items", []):
+        title = item["snippet"]["title"].lower()
+        if any(term in title for term in match_terms):
+            video_ids.append(item["id"]["videoId"])
+    return video_ids
 
 
 def collect_comments(youtube, video_id: str, max_results: int) -> list[dict]:
@@ -58,7 +66,9 @@ def collect_comments(youtube, video_id: str, max_results: int) -> list[dict]:
 
 def collect_for_company(youtube, company: dict) -> list[dict]:
     records = []
-    video_ids = search_videos(youtube, company["youtube_query"], VIDEOS_PER_COMPANY)
+    video_ids: set[str] = set()
+    for query in company["youtube_queries"]:
+        video_ids.update(search_videos(youtube, query, company["youtube_match_terms"], VIDEOS_PER_QUERY))
 
     for video_id in video_ids:
         for comment in collect_comments(youtube, video_id, COMMENTS_PER_VIDEO):
@@ -70,7 +80,7 @@ def collect_for_company(youtube, company: dict) -> list[dict]:
                     "text": comment["text"],
                     "date": comment["date"],
                     "url": comment["url"],
-                    "collected_at": datetime.datetime.utcnow().isoformat() + "Z",
+                    "collected_at": datetime.datetime.now(datetime.timezone.utc).isoformat().replace("+00:00", "Z"),
                 }
             )
 
