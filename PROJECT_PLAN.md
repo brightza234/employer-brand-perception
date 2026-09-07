@@ -52,10 +52,10 @@
 ## แผนพัฒนา (Phases)
 
 ### Phase 0 — Setup
-- [ ] เลือก 2-3 บริษัทเป้าหมาย
-- [ ] สมัคร API key: Reddit (praw), YouTube Data API, NewsAPI.org
-- [ ] `npx create-next-app@latest employer-brand-perception --tailwind --app`
-- [ ] Init git repo, สร้าง `.gitignore` (รวม `.env*`, `node_modules`, `__pycache__`)
+- [x] เลือก 2-3 บริษัทเป้าหมาย: **Agoda, True Digital Group, SCBX (SCB)**
+- [ ] สมัคร API key: Reddit (praw), YouTube Data API, NewsAPI.org — ผู้ใช้ยังไม่ได้สมัคร (ดู guide ก่อนเริ่ม Phase 1)
+- [x] `npx create-next-app@latest employer-brand-perception --tailwind --app`
+- [x] Init git repo, สร้าง `.gitignore` (รวม `.env*`, `node_modules`, `__pycache__`)
 
 ### Phase 1 — Data Collection
 - [ ] เขียน `scripts/collect_reddit.py` — ดึง post/comment ที่ mention บริษัท
