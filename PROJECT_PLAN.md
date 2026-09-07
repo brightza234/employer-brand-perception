@@ -58,10 +58,12 @@
 - [x] Init git repo, สร้าง `.gitignore` (รวม `.env*`, `node_modules`, `__pycache__`)
 
 ### Phase 1 — Data Collection
-- [ ] เขียน `scripts/collect_reddit.py` — ดึง post/comment ที่ mention บริษัท
-- [ ] เขียน `scripts/collect_youtube.py` — ดึง comment จากคลิปที่เกี่ยวข้อง
-- [ ] เขียน `scripts/collect_news.py` — ดึงข่าวจาก NewsAPI
+- [x] เขียน `scripts/collect_reddit.py` — ดึง post/comment ที่ mention บริษัท
+- [x] เขียน `scripts/collect_youtube.py` — ดึง comment จากคลิปที่เกี่ยวข้อง
+- [x] เขียน `scripts/collect_news.py` — ดึงข่าวจาก NewsAPI
 - [ ] รวมข้อมูลทั้งหมดเป็น `data/raw_comments.json` (schema: source, company, text, date, url)
+      — สคริปต์ merge เข้าไฟล์เดียวกันอัตโนมัติ (ดู `scripts/store.py`) แต่ยังไม่เคยรันจริง
+      เพราะรอ user ใส่ API key ใน `.env.local` ก่อน (`python scripts/collect_all.py` เพื่อรันทั้งหมด)
 
 ### Phase 2 — Analysis
 - [ ] เขียน `scripts/analyze.py` — ส่ง comment แต่ละอันไป Claude API เพื่อ:
