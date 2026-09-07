@@ -111,10 +111,11 @@ chi-square significant (p < 0.001) ว่า theme distribution ต่างก�
       ทดสอบทุกหน้า + AI Executive Summary บน production แล้ว ทำงานถูกต้องทั้งหมด
 
 ### Phase 5 — Polish (สำคัญสำหรับสัมภาษณ์)
-- [ ] เขียน README.md อธิบาย methodology + ทำไมถึงเลือก theme taxonomy นี้ (เชื่อมกับ HR background)
-- [ ] เขียนย่อหน้า "What this project demonstrates" เชื่อม psychology + HR + data skill
+- [x] เขียน README.md อธิบาย methodology + ทำไมถึงเลือก theme taxonomy นี้ (เชื่อมกับ HR background)
+- [x] เขียนย่อหน้า "What this project demonstrates" เชื่อม psychology + HR + data skill
       ไว้ใน README เพื่อใช้เตรียมตอบสัมภาษณ์
-- [ ] ใส่ screenshot dashboard ใน README
+- [x] ใส่ screenshot dashboard ใน README (Overview page — Themes/Trend screenshot capture
+      ล้มเหลวเพราะ sandbox นี้ spawn headless browser process ไม่ได้ ใช้ live demo link แทน)
 
 ---
 
