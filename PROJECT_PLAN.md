@@ -105,8 +105,8 @@ chi-square significant (p < 0.001) ว่า theme distribution ต่างก�
 - [x] สร้าง repo บน GitHub (`brightza234/employer-brand-perception`, public), push โค้ดแล้ว
 - [x] เชื่อม Vercel กับ GitHub repo — คำแนะนำให้ user ทำเอง (ต้อง OAuth ด้วยบัญชีตัวเอง)
 - [ ] ตั้งค่า environment variables ใน Vercel (API keys) — **ห้าม commit .env ขึ้น GitHub เด็ดขาด**
-- [ ] ตัดสินใจเรื่อง `data/processed_insights.json` (ปัจจุบัน gitignore ไว้ — ถ้าไม่ commit
-      เว็บที่ deploy บน Vercel จะไม่มีข้อมูลให้แสดง เพราะ build จาก git เท่านั้น)
+- [x] ตัดสินใจเรื่อง `data/processed_insights.json` — commit ขึ้น repo แล้ว (ผู้ใช้ยืนยันแล้วว่า
+      ok เพราะเป็นข้อมูล public + สรุป/ตัวอย่างเท่านั้น ไม่ใช่ raw data ทั้งหมด)
 - [ ] ตรวจสอบว่า deploy สำเร็จ ได้ live URL
 
 ### Phase 5 — Polish (สำคัญสำหรับสัมภาษณ์)
