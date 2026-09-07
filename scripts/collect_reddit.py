@@ -21,9 +21,11 @@ SEARCH_LIMIT = 50
 COMMENTS_PER_SUBMISSION = 20
 
 
-def get_reddit_client() -> praw.Reddit:
-    client_id = os.environ["REDDIT_CLIENT_ID"]
-    client_secret = os.environ["REDDIT_CLIENT_SECRET"]
+def get_reddit_client() -> praw.Reddit | None:
+    client_id = os.environ.get("REDDIT_CLIENT_ID")
+    client_secret = os.environ.get("REDDIT_CLIENT_SECRET")
+    if not client_id or not client_secret:
+        return None
     return praw.Reddit(
         client_id=client_id,
         client_secret=client_secret,
@@ -74,6 +76,9 @@ def collect_for_company(reddit: praw.Reddit, company: dict) -> list[dict]:
 def main() -> None:
     load_dotenv(".env.local")
     reddit = get_reddit_client()
+    if reddit is None:
+        print("[reddit] skipping — REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set in .env.local")
+        return
 
     all_records = []
     for company in COMPANIES:

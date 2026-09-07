@@ -79,7 +79,11 @@ def collect_for_company(youtube, company: dict) -> list[dict]:
 
 def main() -> None:
     load_dotenv(".env.local")
-    youtube = build("youtube", "v3", developerKey=os.environ["YOUTUBE_API_KEY"])
+    api_key = os.environ.get("YOUTUBE_API_KEY")
+    if not api_key:
+        print("[youtube] skipping — YOUTUBE_API_KEY not set in .env.local")
+        return
+    youtube = build("youtube", "v3", developerKey=api_key)
 
     all_records = []
     for company in COMPANIES:

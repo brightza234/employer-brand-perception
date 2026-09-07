@@ -56,7 +56,10 @@ def collect_for_company(api_key: str, company: dict) -> list[dict]:
 
 def main() -> None:
     load_dotenv(".env.local")
-    api_key = os.environ["NEWSAPI_KEY"]
+    api_key = os.environ.get("NEWSAPI_KEY")
+    if not api_key:
+        print("[news] skipping — NEWSAPI_KEY not set in .env.local")
+        return
 
     all_records = []
     for company in COMPANIES:
