@@ -4,63 +4,63 @@
     "scores": [
       {
         "handle": "@iHAVECPU_",
-        "composite_score": 0.7504076127359202
+        "composite_score": 1.6463228815012636
       },
       {
         "handle": "@techoffside",
-        "composite_score": 0.5419462762862131
-      },
-      {
-        "handle": "@StepGeekTVOnline",
-        "composite_score": 0.3598936306377424
-      },
-      {
-        "handle": "@it24hrs",
-        "composite_score": 0.24329566236808464
-      },
-      {
-        "handle": "@spin9",
-        "composite_score": 0.22978564747816083
-      },
-      {
-        "handle": "@bomyanapat",
-        "composite_score": 0.16089733057709282
-      },
-      {
-        "handle": "@GUZAP",
-        "composite_score": 0.07121202642787221
-      },
-      {
-        "handle": "@TumpYung",
-        "composite_score": 0.06445532069540157
-      },
-      {
-        "handle": "@beartai",
-        "composite_score": 0.029013758293549866
-      },
-      {
-        "handle": "@droidsans",
-        "composite_score": -0.024626670907993267
+        "composite_score": 0.45143912269268954
       },
       {
         "handle": "@ExtremeIT",
-        "composite_score": -0.05407019882796686
+        "composite_score": 0.2385588777058578
       },
       {
-        "handle": "@MunkTVDOMUNK",
-        "composite_score": -0.09264482293009581
+        "handle": "@StepGeekTVOnline",
+        "composite_score": 0.09794798141769831
+      },
+      {
+        "handle": "@beartai",
+        "composite_score": 0.0751004410457207
+      },
+      {
+        "handle": "@spin9",
+        "composite_score": 0.007092024759780741
+      },
+      {
+        "handle": "@it24hrs",
+        "composite_score": -0.0223452881930625
+      },
+      {
+        "handle": "@bomyanapat",
+        "composite_score": -0.11582197959734472
+      },
+      {
+        "handle": "@TumpYung",
+        "composite_score": -0.1482943429151972
+      },
+      {
+        "handle": "@GUZAP",
+        "composite_score": -0.18449312463753623
+      },
+      {
+        "handle": "@droidsans",
+        "composite_score": -0.1906781316002324
       },
       {
         "handle": "@changlifeth",
-        "composite_score": -0.13458097328320656
+        "composite_score": -0.2685854852097715
+      },
+      {
+        "handle": "@MunkTVDOMUNK",
+        "composite_score": -0.27582162412625855
       },
       {
         "handle": "@NotebookSPEC",
-        "composite_score": -0.5002082625744018
+        "composite_score": -0.5724934490539554
       },
       {
         "handle": "@Digital2homeChannel",
-        "composite_score": -1.6447763369763713
+        "composite_score": -0.737927903789652
       }
     ]
   }

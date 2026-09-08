@@ -7,10 +7,10 @@ export interface KolMetrics {
   avg_likes: number;
   avg_comments: number;
   engagement_rate: number;
-  upload_consistency: number;
+  upload_frequency: number;
   z_engagement_rate: number;
   z_avg_views: number;
-  z_upload_consistency: number;
+  z_upload_frequency: number;
   composite_score: number;
   rank: number;
 }
@@ -23,7 +23,7 @@ export interface CorrelationPair {
 export interface RegressionSummary {
   intercept: number;
   coef_subscriber_count: number;
-  coef_upload_consistency: number;
+  coef_upload_frequency: number;
   r_squared: number;
   n: number;
 }
@@ -34,11 +34,11 @@ export interface KolScores {
   weights: {
     engagement_rate: number;
     avg_views: number;
-    upload_consistency: number;
+    upload_frequency: number;
   };
   kols: KolMetrics[];
   correlation_matrix: Record<string, CorrelationPair>;
-  regression_engagement_on_size_and_consistency: RegressionSummary;
+  regression_engagement_on_size_and_frequency: RegressionSummary;
   limitations: string;
 }
 

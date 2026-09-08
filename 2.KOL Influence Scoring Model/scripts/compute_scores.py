@@ -2,7 +2,7 @@
 
 Pipeline:
   1. Derive per-KOL metrics from the last VIDEOS_PER_KOL uploads:
-       avg_views, avg_likes, avg_comments, engagement_rate, upload_consistency
+       avg_views, avg_likes, avg_comments, engagement_rate, upload_frequency
   2. Z-score each metric *relative to this peer group* (not an absolute scale) —
      subscriber_count lives in the hundred-thousands/millions while engagement_rate
      lives in 0.01-0.1, so combining raw values would let subscriber_count dominate.
@@ -11,7 +11,7 @@ Pipeline:
      drawn from a larger population.
   3. Composite score = weighted sum of z-scores (weights in config.py).
   4. Validate the metrics statistically: Pearson correlation matrix between
-     subscriber_count, engagement_rate, upload_consistency, plus a multiple linear
+     subscriber_count, engagement_rate, upload_frequency, plus a multiple linear
      regression predicting engagement_rate from the other two (reports R²).
 
 Usage:
@@ -30,24 +30,29 @@ sys.path.insert(0, os.path.dirname(__file__))
 from config import (
     RAW_STATS_PATH,
     SCORES_PATH,
-    UPLOAD_CONSISTENCY_WINDOW_DAYS,
     WEIGHT_AVG_VIEWS,
     WEIGHT_ENGAGEMENT_RATE,
-    WEIGHT_UPLOAD_CONSISTENCY,
+    WEIGHT_UPLOAD_FREQUENCY,
 )
 
 HISTORY_PATH = os.path.join(os.path.dirname(RAW_STATS_PATH), "score_history.json")
 
 
-def derive_metrics(kol: dict, collected_at: datetime.datetime) -> dict:
+def derive_metrics(kol: dict) -> dict:
     """Compute the four raw (pre-normalization) metrics for one KOL.
 
     engagement_rate = (avg_likes + avg_comments) / avg_views — the share of viewers
     who bothered to react, independent of how many people merely saw the video.
 
-    upload_consistency = number of the fetched videos published within the last
-    UPLOAD_CONSISTENCY_WINDOW_DAYS — a proxy for "is this creator still active",
-    not a measure of quality.
+    upload_frequency = videos per week, estimated from the time span between the
+    oldest and newest of the VIDEOS_PER_KOL fetched videos: (n - 1) / span_days * 7.
+    An earlier version counted videos published within a fixed 90-day window, but
+    since that count is capped at VIDEOS_PER_KOL (15), any channel posting more
+    than ~once a week already hits the ceiling — in a live run, 14 of 15 curated
+    channels landed on the same value. Measuring the rate directly over the
+    observed span has no such ceiling: a channel posting daily and one posting
+    weekly both show up distinctly, using the same 15 fetched videos with no extra
+    API calls.
     """
     videos = kol["videos"]
     n = len(videos)
@@ -56,10 +61,12 @@ def derive_metrics(kol: dict, collected_at: datetime.datetime) -> dict:
     avg_comments = sum(v["comment_count"] for v in videos) / n if n else 0.0
     engagement_rate = (avg_likes + avg_comments) / avg_views if avg_views else 0.0
 
-    cutoff = collected_at - datetime.timedelta(days=UPLOAD_CONSISTENCY_WINDOW_DAYS)
-    upload_consistency = sum(
-        1 for v in videos if datetime.datetime.fromisoformat(v["published_at"].replace("Z", "+00:00")) >= cutoff
-    )
+    if n >= 2:
+        published = [datetime.datetime.fromisoformat(v["published_at"].replace("Z", "+00:00")) for v in videos]
+        span_days = (max(published) - min(published)).total_seconds() / 86400
+        upload_frequency = (n - 1) / span_days * 7 if span_days > 0 else float(n)
+    else:
+        upload_frequency = 0.0
 
     return {
         "handle": kol["handle"],
@@ -70,7 +77,7 @@ def derive_metrics(kol: dict, collected_at: datetime.datetime) -> dict:
         "avg_likes": avg_likes,
         "avg_comments": avg_comments,
         "engagement_rate": engagement_rate,
-        "upload_consistency": upload_consistency,
+        "upload_frequency": upload_frequency,
     }
 
 
@@ -85,16 +92,16 @@ def zscore(values: list[float]) -> np.ndarray:
 def add_composite_scores(metrics: list[dict]) -> None:
     z_engagement = zscore([m["engagement_rate"] for m in metrics])
     z_views = zscore([m["avg_views"] for m in metrics])
-    z_consistency = zscore([m["upload_consistency"] for m in metrics])
+    z_frequency = zscore([m["upload_frequency"] for m in metrics])
 
     for i, m in enumerate(metrics):
         m["z_engagement_rate"] = float(z_engagement[i])
         m["z_avg_views"] = float(z_views[i])
-        m["z_upload_consistency"] = float(z_consistency[i])
+        m["z_upload_frequency"] = float(z_frequency[i])
         m["composite_score"] = float(
             WEIGHT_ENGAGEMENT_RATE * z_engagement[i]
             + WEIGHT_AVG_VIEWS * z_views[i]
-            + WEIGHT_UPLOAD_CONSISTENCY * z_consistency[i]
+            + WEIGHT_UPLOAD_FREQUENCY * z_frequency[i]
         )
 
     metrics.sort(key=lambda m: m["composite_score"], reverse=True)
@@ -108,7 +115,7 @@ def correlation_matrix(metrics: list[dict]) -> dict:
     With only 15-25 KOLs, p-values here should be read as directional, not as
     proof — see the `limitations` note in the output file.
     """
-    fields = ["subscriber_count", "engagement_rate", "upload_consistency"]
+    fields = ["subscriber_count", "engagement_rate", "upload_frequency"]
     series = {f: np.array([m[f] for m in metrics], dtype=float) for f in fields}
     result = {}
     for i, a in enumerate(fields):
@@ -118,18 +125,18 @@ def correlation_matrix(metrics: list[dict]) -> dict:
     return result
 
 
-def regression_engagement_on_size_and_consistency(metrics: list[dict]) -> dict:
-    """OLS: engagement_rate ~ subscriber_count + upload_consistency.
+def regression_engagement_on_size_and_frequency(metrics: list[dict]) -> dict:
+    """OLS: engagement_rate ~ subscriber_count + upload_frequency.
 
     Solved via least squares on the design matrix [1, subscriber_count,
-    upload_consistency] rather than pulling in a modeling library — with ~15-25
+    upload_frequency] rather than pulling in a modeling library — with ~15-25
     rows and 2 predictors this is a fully-determined small linear system.
     Reports R² = 1 - SS_res/SS_tot, i.e. the fraction of variance in
-    engagement_rate explained by channel size and posting consistency.
+    engagement_rate explained by channel size and posting frequency.
     """
     y = np.array([m["engagement_rate"] for m in metrics], dtype=float)
     x1 = np.array([m["subscriber_count"] for m in metrics], dtype=float)
-    x2 = np.array([m["upload_consistency"] for m in metrics], dtype=float)
+    x2 = np.array([m["upload_frequency"] for m in metrics], dtype=float)
     X = np.column_stack([np.ones_like(y), x1, x2])
 
     coeffs, _, _, _ = np.linalg.lstsq(X, y, rcond=None)
@@ -141,7 +148,7 @@ def regression_engagement_on_size_and_consistency(metrics: list[dict]) -> dict:
     return {
         "intercept": float(coeffs[0]),
         "coef_subscriber_count": float(coeffs[1]),
-        "coef_upload_consistency": float(coeffs[2]),
+        "coef_upload_frequency": float(coeffs[2]),
         "r_squared": float(r_squared),
         "n": len(metrics),
     }
@@ -169,12 +176,11 @@ def main() -> None:
     with open(RAW_STATS_PATH, encoding="utf-8") as f:
         snapshot = json.load(f)
 
-    collected_at = datetime.datetime.fromisoformat(snapshot["collected_at"].replace("Z", "+00:00"))
-    metrics = [derive_metrics(kol, collected_at) for kol in snapshot["kols"]]
+    metrics = [derive_metrics(kol) for kol in snapshot["kols"]]
 
     add_composite_scores(metrics)
     correlations = correlation_matrix(metrics)
-    regression = regression_engagement_on_size_and_consistency(metrics)
+    regression = regression_engagement_on_size_and_frequency(metrics)
     append_history(metrics, snapshot["collected_at"])
 
     output = {
@@ -183,11 +189,11 @@ def main() -> None:
         "weights": {
             "engagement_rate": WEIGHT_ENGAGEMENT_RATE,
             "avg_views": WEIGHT_AVG_VIEWS,
-            "upload_consistency": WEIGHT_UPLOAD_CONSISTENCY,
+            "upload_frequency": WEIGHT_UPLOAD_FREQUENCY,
         },
         "kols": metrics,
         "correlation_matrix": correlations,
-        "regression_engagement_on_size_and_consistency": regression,
+        "regression_engagement_on_size_and_frequency": regression,
         "limitations": (
             f"Sample size is {len(metrics)} channels — a single curated niche, not a random "
             "sample of Thai tech KOLs. Correlation and regression results here are directional "
@@ -202,7 +208,7 @@ def main() -> None:
         json.dump(output, f, ensure_ascii=False, indent=2)
 
     print(f"[scores] wrote {len(metrics)} KOL scores to {SCORES_PATH}")
-    print(f"[scores] engagement_rate ~ subscriber_count + upload_consistency: R² = {regression['r_squared']:.3f}")
+    print(f"[scores] engagement_rate ~ subscriber_count + upload_frequency: R² = {regression['r_squared']:.3f}")
 
 
 if __name__ == "__main__":

@@ -12,8 +12,8 @@ function StatTile({ label, value, sub }: { label: string; value: string; sub?: s
 
 const LABELS: Record<string, string> = {
   subscriber_count__engagement_rate: "Subscribers ↔ Engagement rate",
-  subscriber_count__upload_consistency: "Subscribers ↔ Upload consistency",
-  engagement_rate__upload_consistency: "Engagement rate ↔ Upload consistency",
+  subscriber_count__upload_frequency: "Subscribers ↔ Upload frequency",
+  engagement_rate__upload_frequency: "Engagement rate ↔ Upload frequency",
 };
 
 export default function StatsPanel({
@@ -40,7 +40,7 @@ export default function StatsPanel({
       </div>
       <div>
         <h3 className="mb-3 text-sm font-medium text-foreground/70">
-          Regression: engagement_rate ~ subscriber_count + upload_consistency
+          Regression: engagement_rate ~ subscriber_count + upload_frequency
         </h3>
         <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
           <StatTile
@@ -49,7 +49,7 @@ export default function StatsPanel({
             sub={`${(regression.r_squared * 100).toFixed(0)}% of engagement variance explained`}
           />
           <StatTile label="Coef. — subscriber_count" value={regression.coef_subscriber_count.toExponential(2)} />
-          <StatTile label="Coef. — upload_consistency" value={regression.coef_upload_consistency.toFixed(4)} />
+          <StatTile label="Coef. — upload_frequency" value={regression.coef_upload_frequency.toFixed(4)} />
         </div>
         <p className="mt-2 text-xs text-foreground/50">n = {regression.n} channels</p>
       </div>

@@ -11,12 +11,11 @@ RAW_STATS_PATH = os.path.join(DATA_DIR, "raw_kol_stats.json")
 SCORES_PATH = os.path.join(DATA_DIR, "kol_scores.json")
 
 VIDEOS_PER_KOL = 15
-UPLOAD_CONSISTENCY_WINDOW_DAYS = 90
 
 # Composite score weights — see README for the reasoning behind these numbers.
 WEIGHT_ENGAGEMENT_RATE = 0.4
 WEIGHT_AVG_VIEWS = 0.3
-WEIGHT_UPLOAD_CONSISTENCY = 0.3
+WEIGHT_UPLOAD_FREQUENCY = 0.3
 
 
 def load_kol_list() -> list[dict]:

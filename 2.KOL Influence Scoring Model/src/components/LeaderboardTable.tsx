@@ -15,7 +15,7 @@ export default function LeaderboardTable({ kols }: { kols: KolMetrics[] }) {
             <th className="px-4 py-3 text-right font-medium">Subscribers</th>
             <th className="px-4 py-3 text-right font-medium">Avg. views</th>
             <th className="px-4 py-3 text-right font-medium">Engagement rate</th>
-            <th className="px-4 py-3 text-right font-medium">Upload consistency</th>
+            <th className="px-4 py-3 text-right font-medium">Upload frequency</th>
             <th className="px-4 py-3 text-right font-medium">Composite score</th>
           </tr>
         </thead>
@@ -27,7 +27,7 @@ export default function LeaderboardTable({ kols }: { kols: KolMetrics[] }) {
               <td className="px-4 py-3 text-right tabular-nums">{formatCompact(k.subscriber_count)}</td>
               <td className="px-4 py-3 text-right tabular-nums">{formatCompact(k.avg_views)}</td>
               <td className="px-4 py-3 text-right tabular-nums">{(k.engagement_rate * 100).toFixed(2)}%</td>
-              <td className="px-4 py-3 text-right tabular-nums">{k.upload_consistency}/90 days</td>
+              <td className="px-4 py-3 text-right tabular-nums">{k.upload_frequency.toFixed(1)}/week</td>
               <td
                 className="px-4 py-3 text-right tabular-nums font-semibold"
                 style={{ color: k.composite_score >= 0 ? "var(--chart-positive)" : "var(--chart-negative)" }}
