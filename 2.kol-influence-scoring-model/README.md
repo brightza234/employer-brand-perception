@@ -1,5 +1,7 @@
 # KOL Influence & Engagement Scoring Model
 
+**[Live demo →](https://kol-scoring-model.vercel.app)**
+
 A statistical ranking model for YouTube KOLs (key opinion leaders) in the Thai tech/gadget-review
 niche — scored on peer-relative engagement and posting frequency, not raw subscriber count.
 
