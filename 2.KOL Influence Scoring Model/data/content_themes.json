@@ -1,0 +1,405 @@
+{
+  "@GUZAP": {
+    "display_name": "GU ZAP",
+    "video_themes": {
+      "EYTrA8JghXA": "Smartphone",
+      "eXNO4NkXGIY": "Wearable/Gadget",
+      "vxkl6CfqNFg": "Laptop/PC",
+      "JnaIhoL-zE0": "Smartphone",
+      "7JsmWpYgQw4": "Wearable/Gadget",
+      "9IhJne5mTtA": "Smartphone",
+      "r8ffUMe8wnc": "Smartphone",
+      "_9Wk8maH0BY": "Smartphone",
+      "SiykvFDz8_o": "Smartphone",
+      "-wg0NW5NiZY": "Other/Lifestyle",
+      "KvvdIdH3-no": "Wearable/Gadget",
+      "7VBsB3u7CSI": "Wearable/Gadget",
+      "LaTtcW_5oXE": "Tech News/Update",
+      "GmHbtKK6I88": "Smartphone",
+      "CO9WiSRsisU": "Wearable/Gadget"
+    },
+    "theme_breakdown": {
+      "Smartphone": 7,
+      "Wearable/Gadget": 5,
+      "Laptop/PC": 1,
+      "Other/Lifestyle": 1,
+      "Tech News/Update": 1
+    }
+  },
+  "@StepGeekTVOnline": {
+    "display_name": "StepGeekTV Online",
+    "video_themes": {
+      "PL9PlYlvHp8": "Tech News/Update",
+      "MYnoDmhv8hw": "Laptop/PC",
+      "9OGyN5pvAsA": "Laptop/PC",
+      "q4E_OiqLLOQ": "Smartphone",
+      "uaph2gEYTus": "Smartphone",
+      "jOhGXlZpu4o": "Smartphone",
+      "dWViqGLc188": "Laptop/PC",
+      "ZG5HyNvc3X8": "Smartphone",
+      "fvJDLHOUMFU": "Smartphone",
+      "6NYJ2N8-h5E": "Other/Lifestyle",
+      "7y-D9ZxJGkk": "Smartphone",
+      "qy2IVMsEz2Y": "Smartphone",
+      "DX_xeYIPc2A": "Smartphone",
+      "m8N_D25v99o": "Wearable/Gadget",
+      "cEHCbqyQuZg": "Smartphone"
+    },
+    "theme_breakdown": {
+      "Tech News/Update": 1,
+      "Laptop/PC": 3,
+      "Smartphone": 9,
+      "Other/Lifestyle": 1,
+      "Wearable/Gadget": 1
+    }
+  },
+  "@beartai": {
+    "display_name": "BT beartai",
+    "video_themes": {
+      "oI0mp7pHTt8": "Smartphone",
+      "0s-v0-aqelQ": "Laptop/PC",
+      "TRVdRi5_8Ug": "Wearable/Gadget",
+      "xzTXuzp4X_U": "Wearable/Gadget",
+      "2DFqQZguew8": "Smartphone",
+      "F_gbxk3ivVU": "Wearable/Gadget",
+      "wJXTlDFOmKg": "Tech News/Update",
+      "jpgtiSNTpSk": "Home Appliance/Audio",
+      "o-RUp7maXhQ": "Tech News/Update",
+      "F5kKkPtggk4": "Home Appliance/Audio",
+      "r5tj0v8vxts": "Tech News/Update",
+      "CUnF6Cxzq3I": "Tech News/Update",
+      "1Dm97YVomV4": "Tech News/Update",
+      "kbUaoKsKLss": "Other/Lifestyle",
+      "oG9x2I2qYfc": "Other/Lifestyle"
+    },
+    "theme_breakdown": {
+      "Smartphone": 2,
+      "Laptop/PC": 1,
+      "Wearable/Gadget": 3,
+      "Tech News/Update": 5,
+      "Home Appliance/Audio": 2,
+      "Other/Lifestyle": 2
+    }
+  },
+  "@spin9": {
+    "display_name": "spin9",
+    "video_themes": {
+      "XOz4eWMgGKs": "Other/Lifestyle",
+      "3nbRXpkcz08": "Other/Lifestyle",
+      "SwwBNN-uzy0": "Other/Lifestyle",
+      "8ykLKC5mRaQ": "Other/Lifestyle",
+      "fbZ4-OZ9aVU": "Tech News/Update",
+      "mZLdEOEpkvg": "Wearable/Gadget",
+      "njr0lvpFhkA": "Home Appliance/Audio",
+      "b_bqnnPC5_s": "Tech News/Update",
+      "tbryitcPJ10": "Other/Lifestyle",
+      "zJgz2lb5SBk": "Wearable/Gadget",
+      "5kMK0IGdwsY": "Other/Lifestyle",
+      "ObdKaLj7Jbs": "Home Appliance/Audio",
+      "Kd9T8DxyusI": "Other/Lifestyle",
+      "IVxTaPz1PHE": "Other/Lifestyle",
+      "IcyDP1EmBhA": "Wearable/Gadget"
+    },
+    "theme_breakdown": {
+      "Other/Lifestyle": 8,
+      "Tech News/Update": 2,
+      "Wearable/Gadget": 3,
+      "Home Appliance/Audio": 2
+    }
+  },
+  "@droidsans": {
+    "display_name": "droidsans",
+    "video_themes": {
+      "2-vnPL5cmrs": "Laptop/PC",
+      "N4X-pnnW3A0": "Tech News/Update",
+      "tJw6RmQ4Xi4": "Tech News/Update",
+      "wDVr80ntnSA": "Tech News/Update",
+      "73D1l3LWB14": "Home Appliance/Audio",
+      "SB_MZ7dic2M": "Wearable/Gadget",
+      "TE4UrTXTA4g": "Smartphone",
+      "bSqYb-rGND0": "Tech News/Update",
+      "Ln_7rXla5fo": "Tech News/Update",
+      "rGbA4PkxiZQ": "Laptop/PC",
+      "cY-3dNqaghA": "Smartphone",
+      "uHz0wKfcHdM": "Smartphone",
+      "T_EYaX6iLGQ": "Home Appliance/Audio",
+      "uUVtn5N9Uko": "Tech News/Update",
+      "T4VhqJnwmV8": "Smartphone"
+    },
+    "theme_breakdown": {
+      "Laptop/PC": 2,
+      "Tech News/Update": 6,
+      "Home Appliance/Audio": 2,
+      "Wearable/Gadget": 1,
+      "Smartphone": 4
+    }
+  },
+  "@TumpYung": {
+    "display_name": "Tump Yung",
+    "video_themes": {
+      "NEzyR0zx5n8": "Smartphone",
+      "FxiOi4UUlN0": "Tech News/Update",
+      "VTdaPyd9tAc": "Smartphone",
+      "bXlZnYcQ01M": "Smartphone",
+      "SyIf7aT8fkU": "Wearable/Gadget",
+      "PYC9U9NdzCw": "Smartphone",
+      "fWYfOG7KcYA": "Smartphone",
+      "VVUyL1SrNXc": "Smartphone",
+      "7qIGEdEFDvc": "Smartphone",
+      "qGLQVjmVlRE": "Smartphone",
+      "DCEn5cn5EQ8": "Smartphone",
+      "bxzhE5RzE2c": "Home Appliance/Audio",
+      "Id02F_FgUQM": "Laptop/PC",
+      "6CIHfk9Sbco": "Smartphone",
+      "3oM117pQw8E": "Smartphone"
+    },
+    "theme_breakdown": {
+      "Smartphone": 11,
+      "Tech News/Update": 1,
+      "Wearable/Gadget": 1,
+      "Home Appliance/Audio": 1,
+      "Laptop/PC": 1
+    }
+  },
+  "@ExtremeIT": {
+    "display_name": "Extreme IT",
+    "video_themes": {
+      "0m_FZTpqfDM": "Wearable/Gadget",
+      "_i848ns0yoM": "Wearable/Gadget",
+      "DoE1x7a5Vow": "Wearable/Gadget",
+      "tY_XEhrMB8o": "Home Appliance/Audio",
+      "VcGVXD6u4kw": "Wearable/Gadget",
+      "EUTL3BojvGA": "Tech News/Update",
+      "OoQhMhVN_eI": "Wearable/Gadget",
+      "iWM4yp2E5y0": "Wearable/Gadget",
+      "ZuqQI0hrxXQ": "Wearable/Gadget",
+      "DLWnFNNFmLM": "Laptop/PC",
+      "h_KZCk3CGvc": "Tech News/Update",
+      "EyMuFUiv6B8": "Laptop/PC",
+      "0H9cxtWEVvo": "Wearable/Gadget",
+      "XIAouaGdto8": "Wearable/Gadget",
+      "ajzjHDMPg0c": "Other/Lifestyle"
+    },
+    "theme_breakdown": {
+      "Wearable/Gadget": 9,
+      "Home Appliance/Audio": 1,
+      "Tech News/Update": 2,
+      "Laptop/PC": 2,
+      "Other/Lifestyle": 1
+    }
+  },
+  "@iHAVECPU_": {
+    "display_name": "iHAVECPU",
+    "video_themes": {
+      "qi37CY5euYU": "Laptop/PC",
+      "Cga2z2o1ONk": "Wearable/Gadget",
+      "6D6gveklyGE": "Other/Lifestyle",
+      "cameLhcWxBc": "Wearable/Gadget",
+      "IrmAeorGCxs": "Laptop/PC",
+      "JypP0ANlbY4": "Wearable/Gadget",
+      "3ykro8t1Prw": "Laptop/PC",
+      "x0lw1w6O2F0": "Laptop/PC",
+      "X5H8xWRVA4Y": "Laptop/PC",
+      "Gcbzou8zbb0": "Tech News/Update",
+      "wnD4slatO7E": "Tech News/Update",
+      "oYqKXkv4Euk": "Other/Lifestyle",
+      "t4Zr1isRh-I": "Laptop/PC",
+      "XEahaefFlJs": "Tech News/Update",
+      "uv1RJWDGZF4": "Laptop/PC"
+    },
+    "theme_breakdown": {
+      "Laptop/PC": 7,
+      "Wearable/Gadget": 3,
+      "Other/Lifestyle": 2,
+      "Tech News/Update": 3
+    }
+  },
+  "@NotebookSPEC": {
+    "display_name": "NotebookSPEC",
+    "video_themes": {
+      "8tugNQOkrPE": "Smartphone",
+      "elbi3A-Flkg": "Wearable/Gadget",
+      "3uGTWjYMB9o": "Other/Lifestyle",
+      "m6WhExhR-Qo": "Laptop/PC",
+      "qcijDfON_xg": "Tech News/Update",
+      "KrJ0i3Rfl0Y": "Other/Lifestyle",
+      "CAKx2Rkg5B0": "Laptop/PC",
+      "uOBQ-gXFYNU": "Tech News/Update",
+      "oCMPPB4pxKM": "Home Appliance/Audio",
+      "khLpzNRVvhg": "Laptop/PC",
+      "xQ2LHOeF5bA": "Laptop/PC",
+      "DfHQU_6GW-8": "Home Appliance/Audio",
+      "5UTkTsgEdYo": "Wearable/Gadget",
+      "0dI3edPeuFg": "Laptop/PC",
+      "gmgia_o6z-I": "Wearable/Gadget"
+    },
+    "theme_breakdown": {
+      "Smartphone": 1,
+      "Wearable/Gadget": 3,
+      "Other/Lifestyle": 2,
+      "Laptop/PC": 5,
+      "Tech News/Update": 2,
+      "Home Appliance/Audio": 2
+    }
+  },
+  "@techoffside": {
+    "display_name": "TechOffside ล้ำหน้าโชว์",
+    "video_themes": {
+      "gv8cWGj-aEQ": "Tech News/Update",
+      "AaArFrLNl_0": "Wearable/Gadget",
+      "UdSe-ZThnes": "Tech News/Update",
+      "ZYvlD1vMPsQ": "Home Appliance/Audio",
+      "rh3TDB1f1S8": "Home Appliance/Audio",
+      "Sck0kv0y7oI": "Other/Lifestyle",
+      "IfZBP6dCoaw": "Tech News/Update",
+      "ZBIamkv5D7k": "Other/Lifestyle",
+      "2t3opRCiwR4": "Tech News/Update",
+      "TwjqnPZ_BiQ": "Smartphone",
+      "EtH6p1LR6Yg": "Smartphone",
+      "AAML29Nbi_8": "Smartphone",
+      "IS5AUDxt_mk": "Smartphone",
+      "PFFhkMYFYEE": "Smartphone",
+      "qcWST60JmzU": "Laptop/PC"
+    },
+    "theme_breakdown": {
+      "Tech News/Update": 4,
+      "Wearable/Gadget": 1,
+      "Home Appliance/Audio": 2,
+      "Other/Lifestyle": 2,
+      "Smartphone": 5,
+      "Laptop/PC": 1
+    }
+  },
+  "@MunkTVDOMUNK": {
+    "display_name": "Munk TV",
+    "video_themes": {
+      "U7h0YpnvVMg": "Wearable/Gadget",
+      "SgTyK2MvrM4": "Home Appliance/Audio",
+      "09qRDtUEAVE": "Other/Lifestyle",
+      "P6ek2IaMwhk": "Wearable/Gadget",
+      "XB5xJNVMbs8": "Laptop/PC",
+      "sD1rEyE401g": "Wearable/Gadget",
+      "0DsgqOTQVKE": "Other/Lifestyle",
+      "QcSiDJ5Bb64": "Tech News/Update",
+      "JsVBMHmPSLo": "Other/Lifestyle",
+      "W45JT4IFsb0": "Smartphone",
+      "BVNRqh61eTA": "Home Appliance/Audio",
+      "dNdhY0Ixkhc": "Tech News/Update",
+      "sz5RBl1b4VA": "Wearable/Gadget",
+      "gQ9ykWiAVX8": "Other/Lifestyle",
+      "R5dTzzZ3WRg": "Smartphone"
+    },
+    "theme_breakdown": {
+      "Wearable/Gadget": 4,
+      "Home Appliance/Audio": 2,
+      "Other/Lifestyle": 4,
+      "Laptop/PC": 1,
+      "Tech News/Update": 2,
+      "Smartphone": 2
+    }
+  },
+  "@it24hrs": {
+    "display_name": "iT24Hrs",
+    "video_themes": {
+      "zMUQe1k61F8": "Other/Lifestyle",
+      "LhqyHbkHZ6k": "Tech News/Update",
+      "4mqMzrVjDEI": "Tech News/Update",
+      "VHSHi3Oh1R8": "Tech News/Update",
+      "jN7nPHKgZ_Y": "Tech News/Update",
+      "qQda76vTbz0": "Tech News/Update",
+      "fYv0N9T0-bg": "Tech News/Update",
+      "wkxiF8r4UT4": "Wearable/Gadget",
+      "buVl5U7B6Lw": "Smartphone",
+      "vzaN4OqwTVY": "Tech News/Update",
+      "s_Jj1VOgOjU": "Tech News/Update",
+      "3ndRPEQeMz0": "Smartphone",
+      "NGuELy_E15c": "Tech News/Update",
+      "y6WAAAqIDk0": "Tech News/Update",
+      "IjUsNEk8Th0": "Tech News/Update"
+    },
+    "theme_breakdown": {
+      "Other/Lifestyle": 1,
+      "Tech News/Update": 11,
+      "Wearable/Gadget": 1,
+      "Smartphone": 2
+    }
+  },
+  "@bomyanapat": {
+    "display_name": "bomyanapat",
+    "video_themes": {
+      "IY0nPdOfYD0": "Smartphone",
+      "KGE1jIsqPiE": "Tech News/Update",
+      "FvBhxRgByd0": "Wearable/Gadget",
+      "wO9aIpnTdZY": "Other/Lifestyle",
+      "QxDLVhT6iEY": "Laptop/PC",
+      "xkwsogcbWnc": "Smartphone",
+      "t6bII1hEKks": "Smartphone",
+      "4DmAZwg0nq0": "Smartphone",
+      "-qvTaE33YYk": "Smartphone",
+      "6_LoV-R00iQ": "Home Appliance/Audio",
+      "k8r3qey5W0o": "Home Appliance/Audio",
+      "XJjS7c1UWvM": "Tech News/Update",
+      "nbNddsGcvZ0": "Other/Lifestyle",
+      "UBwKOJF1Xjo": "Tech News/Update",
+      "4QPUpzGuo64": "Laptop/PC"
+    },
+    "theme_breakdown": {
+      "Smartphone": 5,
+      "Tech News/Update": 3,
+      "Wearable/Gadget": 1,
+      "Other/Lifestyle": 2,
+      "Laptop/PC": 2,
+      "Home Appliance/Audio": 2
+    }
+  },
+  "@changlifeth": {
+    "display_name": "CHANG LIFE",
+    "video_themes": {
+      "puP_2ckEKtI": "Wearable/Gadget",
+      "9vQb_-0FGDc": "Wearable/Gadget",
+      "nhJ09JhiRpw": "Wearable/Gadget",
+      "v-oNfK_xCgs": "Home Appliance/Audio",
+      "sYjMN0zzHsM": "Home Appliance/Audio",
+      "RPquxr-Pu6E": "Other/Lifestyle",
+      "IjkYz1YHY1A": "Wearable/Gadget",
+      "x2e4mkOIt6U": "Wearable/Gadget",
+      "LyuvZrvkJ-s": "Wearable/Gadget",
+      "WmH4CX_Y-uY": "Wearable/Gadget",
+      "tVfH2QWzzH4": "Other/Lifestyle",
+      "S86vrkDnUQo": "Wearable/Gadget",
+      "YhCpSh483lM": "Wearable/Gadget",
+      "kTxIvC1Su1Y": "Wearable/Gadget",
+      "1B_8U5nwwP8": "Other/Lifestyle"
+    },
+    "theme_breakdown": {
+      "Wearable/Gadget": 10,
+      "Home Appliance/Audio": 2,
+      "Other/Lifestyle": 3
+    }
+  },
+  "@Digital2homeChannel": {
+    "display_name": "Digital2home",
+    "video_themes": {
+      "XiZBv0_Jh-Q": "Wearable/Gadget",
+      "G-FsC4uAyXs": "Wearable/Gadget",
+      "MyAXwcgUcL4": "Wearable/Gadget",
+      "ATUbJAFSaUc": "Wearable/Gadget",
+      "CQ3Nqo-myxE": "Wearable/Gadget",
+      "TSodiNqkMoY": "Home Appliance/Audio",
+      "fLWbFC8l5xk": "Wearable/Gadget",
+      "t-q4ckvMcJg": "Wearable/Gadget",
+      "D2pG-4iRSMo": "Wearable/Gadget",
+      "nyQd8dZvgZQ": "Wearable/Gadget",
+      "oLWMfeuT5Ow": "Other/Lifestyle",
+      "_dznGDkeVcE": "Other/Lifestyle",
+      "g6WuAzhyIJY": "Other/Lifestyle",
+      "IUdHji-vwfQ": "Other/Lifestyle",
+      "4e-xSFxRoX8": "Other/Lifestyle"
+    },
+    "theme_breakdown": {
+      "Wearable/Gadget": 9,
+      "Home Appliance/Audio": 1,
+      "Other/Lifestyle": 5
+    }
+  }
+}

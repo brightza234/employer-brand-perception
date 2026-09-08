@@ -29,10 +29,27 @@ separates the two, not just a follower leaderboard with a chart on top.
 
 ## What it found
 
-_To be filled in after the first live data collection run — see "Running it locally" below.
-`data/kol_scores.json` (committed) holds whatever the last run produced; this section will
-summarize the leaderboard result and the correlation/regression findings once real API keys are
-in place._
+(From the live run on 2026-09-08; see `data/kol_scores.json` for the full numbers.)
+
+- **Subscriber count and engagement rate are negatively correlated in this niche** (Pearson
+  r = -0.29), consistent with the common claim that bigger channels engage a smaller share of
+  their audience — though at n=15 this isn't significant (p = 0.29), so it's a directional signal,
+  not proof.
+- **The top-ranked KOL by composite score isn't the biggest channel.** [iHAVECPU](https://www.youtube.com/@iHAVECPU_)
+  (918K subscribers) ranks #1 with a 2.56% engagement rate, ahead of **GU ZAP** (2.5M subscribers,
+  the largest channel in the set), which ranks #7 with a 0.61% engagement rate — a 5x subscriber
+  gap doesn't translate into more relative influence.
+- **`upload_consistency` turned out to have almost no discriminating power for active channels**:
+  14 of 15 KOLs had all of their last 15 videos land within the 90-day window (value = 15), so the
+  metric only meaningfully separates one outlier — **Digital2home** (3/15 videos in-window) — whose
+  z-score of -3.74 dominates its composite score (-1.64, far below everyone else). This is a real
+  methodological finding, not a bug: a 90-day/15-video window is too short to distinguish
+  "consistent" from "very consistent" among active creators; it only flags channels that have gone
+  quiet.
+- **The regression (`engagement_rate ~ subscriber_count + upload_consistency`) explains R² = 0.177**
+  (18%) of engagement-rate variance — subscriber count and posting consistency together are a weak
+  predictor of engagement in this niche, implying most of what drives engagement here (content
+  quality, niche fit, audience loyalty) isn't captured by either variable.
 
 ## Pipeline
 
@@ -91,6 +108,11 @@ v3) and the [Anthropic Console](https://console.anthropic.com).
 
 ## Limitations (and why they're here on purpose)
 
+- **`upload_consistency`'s 90-day/15-video window is too short to discriminate among active
+  creators.** In the live run, 14 of 15 KOLs hit the ceiling value (15/15 recent videos within 90
+  days), so the metric only identified one inactive outlier rather than a meaningful spread. A
+  longer window (e.g. videos-per-week over a year) would likely separate "active" creators from
+  each other better than this one does.
 - **Sample size is 15 channels, one niche.** Correlation and regression results describe *this*
   curated peer group, not Thai YouTube in general — a p-value here is a directional signal, not
   proof, and the dashboard states this rather than implying more statistical confidence than 15

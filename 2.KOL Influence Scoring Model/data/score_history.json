@@ -1,0 +1,67 @@
+[
+  {
+    "collected_at": "2026-09-08T04:10:46.500686Z",
+    "scores": [
+      {
+        "handle": "@iHAVECPU_",
+        "composite_score": 0.7504076127359202
+      },
+      {
+        "handle": "@techoffside",
+        "composite_score": 0.5419462762862131
+      },
+      {
+        "handle": "@StepGeekTVOnline",
+        "composite_score": 0.3598936306377424
+      },
+      {
+        "handle": "@it24hrs",
+        "composite_score": 0.24329566236808464
+      },
+      {
+        "handle": "@spin9",
+        "composite_score": 0.22978564747816083
+      },
+      {
+        "handle": "@bomyanapat",
+        "composite_score": 0.16089733057709282
+      },
+      {
+        "handle": "@GUZAP",
+        "composite_score": 0.07121202642787221
+      },
+      {
+        "handle": "@TumpYung",
+        "composite_score": 0.06445532069540157
+      },
+      {
+        "handle": "@beartai",
+        "composite_score": 0.029013758293549866
+      },
+      {
+        "handle": "@droidsans",
+        "composite_score": -0.024626670907993267
+      },
+      {
+        "handle": "@ExtremeIT",
+        "composite_score": -0.05407019882796686
+      },
+      {
+        "handle": "@MunkTVDOMUNK",
+        "composite_score": -0.09264482293009581
+      },
+      {
+        "handle": "@changlifeth",
+        "composite_score": -0.13458097328320656
+      },
+      {
+        "handle": "@NotebookSPEC",
+        "composite_score": -0.5002082625744018
+      },
+      {
+        "handle": "@Digital2homeChannel",
+        "composite_score": -1.6447763369763713
+      }
+    ]
+  }
+]
