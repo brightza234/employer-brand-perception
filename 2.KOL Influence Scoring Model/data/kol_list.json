@@ -1,0 +1,22 @@
+{
+  "niche": "รีวิวเทคโนโลยี/gadget (Thai tech & gadget review)",
+  "curated_at": "2026-09-08",
+  "notes": "Handles are resolved to channel IDs by scripts/collect_youtube.py via the YouTube Data API (channels.list with forHandle). Subscriber counts below are approximate figures observed during manual curation and are NOT used for scoring — the collector fetches live stats.",
+  "kols": [
+    { "handle": "@GUZAP", "display_name": "GU ZAP", "approx_subs_at_curation": 2530000 },
+    { "handle": "@StepGeekTVOnline", "display_name": "StepGeekTV Online", "approx_subs_at_curation": 1780000 },
+    { "handle": "@beartai", "display_name": "BT beartai", "approx_subs_at_curation": 1590000 },
+    { "handle": "@spin9", "display_name": "spin9", "approx_subs_at_curation": 1090000 },
+    { "handle": "@droidsans", "display_name": "droidsans", "approx_subs_at_curation": 1040000 },
+    { "handle": "@TumpYung", "display_name": "Tump Yung", "approx_subs_at_curation": 1030000 },
+    { "handle": "@ExtremeIT", "display_name": "Extreme IT", "approx_subs_at_curation": 1020000 },
+    { "handle": "@iHAVECPU_", "display_name": "iHAVECPU", "approx_subs_at_curation": 918000 },
+    { "handle": "@NotebookSPEC", "display_name": "NotebookSPEC", "approx_subs_at_curation": 741000 },
+    { "handle": "@techoffside", "display_name": "TechOffside ล้ำหน้าโชว์", "approx_subs_at_curation": 719000 },
+    { "handle": "@MunkTVDOMUNK", "display_name": "Munk TV", "approx_subs_at_curation": 462000 },
+    { "handle": "@it24hrs", "display_name": "iT24Hrs", "approx_subs_at_curation": 429000 },
+    { "handle": "@bomyanapat", "display_name": "bomyanapat", "approx_subs_at_curation": 72400 },
+    { "handle": "@changlifeth", "display_name": "CHANG LIFE", "approx_subs_at_curation": 36800 },
+    { "handle": "@Digital2homeChannel", "display_name": "Digital2home", "approx_subs_at_curation": 9570 }
+  ]
+}
