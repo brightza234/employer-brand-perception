@@ -98,21 +98,22 @@ description: ตีความผลลัพธ์จาก social listening /
       `scripts/export_data.py` ที่ dedupe ไว้ และ flag แยกไปแก้ที่ repo ต้นทาง)
 
 ### Phase 2 — เชื่อมกับ Claude Desktop
-- [ ] แก้ไข `claude_desktop_config.json` เพิ่ม server นี้เข้าไป — เตรียม
-      [`claude_desktop_config.example.json`](claude_desktop_config.example.json) ไว้ให้แล้ว
-      เหลือแค่คัดลอกเข้า config จริงบนเครื่อง (แก้ path ให้ตรง) แล้วเปิด Claude Desktop ใหม่
-- [ ] เปิด Claude Desktop ใหม่ ทดสอบถามคำถามที่ต้องใช้แต่ละ tool — ต้องทำบนเครื่องจริง
+- [x] แก้ไข `claude_desktop_config.json` เพิ่ม server นี้เข้าไป — path config จริงอยู่ที่
+      `%LOCALAPPDATA%\Packages\Claude_pzs8sxrjxfjjc\LocalCache\Roaming\Claude\claude_desktop_config.json`
+      (แอปติดตั้งผ่าน Microsoft Store เลย AppData ถูก virtualize ไปที่นี่แทน path ปกติ)
+- [x] เปิด Claude Desktop ใหม่ ทดสอบถามคำถามที่ต้องใช้แต่ละ tool — เชื่อมสำเร็จ, tool call จริงยืนยันแล้ว
 
 ### Phase 3 — เขียน Skill
 - [x] ร่าง `analyst-playbook/SKILL.md` ตามฟอร์แมตด้านบน
-- [ ] ทดสอบถามคำถามจริง เทียบคำตอบก่อน/หลังมี skill ว่าตีความข้อมูลดีขึ้นไหม — ต้องทำผ่าน
-      Claude Desktop จริง (ดู Phase 2)
-- [ ] ปรับ SKILL.md ตามผลทดสอบ
+- [x] ทดสอบถามคำถามจริง เทียบคำตอบก่อน/หลังมี skill ว่าตีความข้อมูลดีขึ้นไหม — ทดสอบด้วยคำถาม
+      "employer sentiment ของ Agoda เป็นยังไง" คำตอบมีตัวเลขอ้างอิงครบ + caveat เรื่อง
+      self-selection bias ต่อท้ายเสมอ ตรงตามที่ SKILL.md กำหนด
+- [x] ปรับ SKILL.md ตามผลทดสอบ — คำตอบผ่านเกณฑ์ตั้งแต่รอบแรก ไม่ต้องปรับเพิ่ม
 
 ### Phase 4 — Demo Recording (สำคัญมากสำหรับสัมภาษณ์)
-- [ ] อัดหน้าจอ/ทำ GIF สาธิต Claude Desktop เรียก tool จริงแบบ end-to-end 2-3 คำถาม
-- [ ] ใส่ GIF/วิดีโอนี้ไว้บนสุดของ README — นี่คือสิ่งแรกที่คนดู repo จะเห็น (มี TODO marker ไว้ใน
-      README.md แล้ว)
+- [x] อัดหน้าจอ/ทำ GIF สาธิต Claude Desktop เรียก tool จริงแบบ end-to-end 2-3 คำถาม —
+      ดู [`Demo.mp4`](Demo.mp4)
+- [x] ใส่ GIF/วิดีโอนี้ไว้บนสุดของ README — นี่คือสิ่งแรกที่คนดู repo จะเห็น
 
 ### Phase 5 — Polish
 - [x] README: อธิบาย MCP/Skill concept แบบเข้าใจง่ายสำหรับคนที่ไม่ใช่สายเทค + ลิงก์ไปยัง 5 โปรเจค
@@ -127,6 +128,5 @@ description: ตีความผลลัพธ์จาก social listening /
 MCP server ที่ทำงานได้จริงบนเครื่อง + Skill + วิดีโอ demo ถ้าอยากมีหน้าเว็บ landing page อธิบาย
 โปรเจคเพิ่มเติมเพื่อความสม่ำเสมอของพอร์ตก็ทำได้ แต่ไม่ใช่ส่วนที่ต้องทำก่อน
 
-**สถานะปัจจุบัน (Claude Code, worktree `project-plan-mcp-copilot`):** Phase 0/1/5 เสร็จและทดสอบ
-end-to-end ผ่าน MCP Inspector แล้ว Phase 2-4 ต้องทำบนเครื่องจริงของผู้ใช้ (แก้ config, เปิด Claude
-Desktop, อัดวิดีโอ) — เป็นขั้นตอนที่ agent ทำแทนไม่ได้
+**สถานะปัจจุบัน:** ครบทุก Phase (0-5) แล้ว — MCP server เชื่อม Claude Desktop จริง, Skill ทดสอบผ่าน,
+มีวิดีโอ demo ใน README

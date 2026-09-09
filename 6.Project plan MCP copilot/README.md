@@ -1,8 +1,9 @@
 # AI Analyst Copilot — MCP Server + Claude Skill
 
-<!-- TODO: record a short screen-capture GIF/video of Claude Desktop calling these
-tools end-to-end (2-3 questions) and embed it here first — this is the first
-thing anyone opening this repo should see. -->
+<video src="Demo.mp4" controls width="720">
+  Demo: Claude Desktop เรียก analyst-copilot tools แบบ end-to-end
+  (ถ้าไม่ขึ้นวิดีโอ ดูไฟล์ <a href="Demo.mp4">Demo.mp4</a> ได้โดยตรง)
+</video>
 
 ## แนวคิดแบบเข้าใจง่าย (สำหรับคนที่ไม่ใช่สายเทค)
 
@@ -82,4 +83,4 @@ Claude Desktop ใหม่ — ตอนนี้ถามคำถามที
 ## หมายเหตุ
 
 โปรเจคนี้ไม่ deploy เป็นเว็บแอป — deliverable หลักคือ MCP server ที่ทำงานได้จริงบนเครื่อง + Skill
-+ วิดีโอสาธิต (ดู TODO ด้านบนสุดของไฟล์นี้)
++ วิดีโอสาธิต (ดูด้านบนสุดของไฟล์นี้)
