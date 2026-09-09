@@ -1,0 +1,1006 @@
+{
+  "source": "Wikipedia list of most-subscribed YouTube channels (scraped)",
+  "scraped_at": "2026-09-08T14:48:30.399292+00:00",
+  "channels": [
+    {
+      "rank": 1,
+      "name": "MrBeast",
+      "subscribers": 516000000,
+      "primary_language": "English",
+      "category": "Entertainment",
+      "country": "United States",
+      "youtube_url": "https://www.youtube.com/user/MrBeast6000",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 2,
+      "name": "T-Series",
+      "subscribers": 315000000,
+      "primary_language": "Hindi",
+      "category": "Music",
+      "country": "India",
+      "youtube_url": "https://www.youtube.com/user/tseries",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 3,
+      "name": "Cocomelon - Nursery Rhymes",
+      "subscribers": 202000000,
+      "primary_language": "English",
+      "category": "Education",
+      "country": "United States",
+      "youtube_url": "https://www.youtube.com/channel/UCbCmjCuTUZos6Inko4u57UQ",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 4,
+      "name": "SET India",
+      "subscribers": 190000000,
+      "primary_language": "Hindi",
+      "category": "Entertainment",
+      "country": "India",
+      "youtube_url": "https://www.youtube.com/channel/UCpEhnqL0y41EpW2TvWAHD7Q",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 5,
+      "name": "Vlad and Niki",
+      "subscribers": 150000000,
+      "primary_language": "English",
+      "category": "Entertainment",
+      "country": "Russia",
+      "youtube_url": "https://www.youtube.com/channel/UCvlE5gTbOvjiolFlEm-c_Ow",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 6,
+      "name": "Stokes Twins",
+      "subscribers": 146000000,
+      "primary_language": "English",
+      "category": "People",
+      "country": "United States China",
+      "youtube_url": "https://www.youtube.com/@stokestwins",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 7,
+      "name": "Kids Diana Show",
+      "subscribers": 138000000,
+      "primary_language": "English",
+      "category": "Entertainment",
+      "country": "Ukraine",
+      "youtube_url": "https://www.youtube.com/channel/UCk8GzjMOrta8yxDcKfylJYw",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 8,
+      "name": "김프로KIMPRO",
+      "subscribers": 135000000,
+      "primary_language": "Korean",
+      "category": "People",
+      "country": "South Korea",
+      "youtube_url": "https://www.youtube.com/@kimpro828",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 9,
+      "name": "Like Nastya",
+      "subscribers": 133000000,
+      "primary_language": "English",
+      "category": "Entertainment",
+      "country": "Russia",
+      "youtube_url": "https://www.youtube.com/channel/UCJplp5SjeGSdVdwsfb9Q7lQ",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 10,
+      "name": "Zee Music Company",
+      "subscribers": 123000000,
+      "primary_language": "Hindi",
+      "category": "Music",
+      "country": "India",
+      "youtube_url": "https://www.youtube.com/channel/UCFFbwnve3yF62-tVXkTyHqg",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 11,
+      "name": "Alejo Igoa",
+      "subscribers": 121000000,
+      "primary_language": "Spanish",
+      "category": "Entertainment",
+      "country": "Argentina",
+      "youtube_url": "https://www.youtube.com/user/AlejoIgoa",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 12,
+      "name": "WWE",
+      "subscribers": 114000000,
+      "primary_language": "English",
+      "category": "Sports",
+      "country": "United States",
+      "youtube_url": "https://www.youtube.com/user/WWEFanNation",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 13,
+      "name": "Goldmines",
+      "subscribers": 110000000,
+      "primary_language": "Hindi",
+      "category": "Film",
+      "country": "India",
+      "youtube_url": "https://www.youtube.com/channel/UCyoXW-Dse7fURq30EWl_CUA",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 14,
+      "name": "PewDiePie",
+      "subscribers": 109000000,
+      "primary_language": "English",
+      "category": "Entertainment/Lifestyle Vlogs",
+      "country": "Sweden Japan",
+      "youtube_url": "https://www.youtube.com/PewDiePie",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 15,
+      "name": "Sony SAB",
+      "subscribers": 106000000,
+      "primary_language": "Hindi",
+      "category": "Entertainment",
+      "country": "India",
+      "youtube_url": "https://www.youtube.com/channel/UC6-F5tO8uklgE9Zy8IvbdFw",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 16,
+      "name": "Blackpink",
+      "subscribers": 101000000,
+      "primary_language": "Korean",
+      "category": "Music",
+      "country": "South Korea",
+      "youtube_url": "https://www.youtube.com/channel/UCOmHUn--16B90oW2L6FRR3A",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 17,
+      "name": "Alan's Universe",
+      "subscribers": 101000000,
+      "primary_language": "English",
+      "category": "Entertainment",
+      "country": "United States",
+      "youtube_url": "https://www.youtube.com/@AlanChikinChow",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 18,
+      "name": "Zee TV",
+      "subscribers": 98900000,
+      "primary_language": "Hindi",
+      "category": "Entertainment",
+      "country": "India",
+      "youtube_url": "https://www.youtube.com/channel/UCppHT7SZKKvar4Oc9J4oljQ",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 19,
+      "name": "ChuChu TV Nursery Rhymes & Kids Songs",
+      "subscribers": 98200000,
+      "primary_language": "Hindi",
+      "category": "Entertainment",
+      "country": "India",
+      "youtube_url": "https://www.youtube.com/channel/UCBnZ16ahKA2DZ_T5W0FPUXg",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 20,
+      "name": "Topper Guild",
+      "subscribers": 94600000,
+      "primary_language": "English",
+      "category": "Entertainment",
+      "country": "United States",
+      "youtube_url": "https://www.youtube.com/@topperguild",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 21,
+      "name": "A4",
+      "subscribers": 92700000,
+      "primary_language": "Russian",
+      "category": "Entertainment",
+      "country": "Belarus",
+      "youtube_url": "https://www.youtube.com/channel/UC2tsySbe9TNrI-xh2lximHA",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 22,
+      "name": "KL BRO Biju Rithvik",
+      "subscribers": 88500000,
+      "primary_language": "Malayalam",
+      "category": "Lifestyle Vlogs",
+      "country": "India",
+      "youtube_url": "https://www.youtube.com/@KLBROBijuRithvik1",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 23,
+      "name": "BANGTANTV",
+      "subscribers": 85800000,
+      "primary_language": "Korean",
+      "category": "Music",
+      "country": "South Korea",
+      "youtube_url": "https://www.youtube.com/channel/UCLkAepWjdylmXSltofFvsYQ",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 24,
+      "name": "Baby Shark - Pinkfong Kids’ Songs & Stories",
+      "subscribers": 85100000,
+      "primary_language": "English",
+      "category": "Entertainment",
+      "country": "South Korea",
+      "youtube_url": "https://www.youtube.com/channel/UCcdwLMPsaU2ezNSJU1nFoBQ",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 25,
+      "name": "ZAMZAM BROTHERS OFFICIAL",
+      "subscribers": 84900000,
+      "primary_language": "Urdu",
+      "category": "Entertainment",
+      "country": "United Arab Emirates",
+      "youtube_url": "https://www.youtube.com/channel/UCrnQFuUabBHaw-BRhPo8xEA",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 26,
+      "name": "UR · Cristiano",
+      "subscribers": 83200000,
+      "primary_language": "Portuguese, English",
+      "category": "Entertainment/Sports",
+      "country": "Portugal",
+      "youtube_url": "https://www.youtube.com/@cristiano",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 27,
+      "name": "Toys and Colors",
+      "subscribers": 83000000,
+      "primary_language": "English",
+      "category": "Entertainment",
+      "country": "United States",
+      "youtube_url": "https://www.youtube.com/@toysandcolors",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 28,
+      "name": "T-Series Bhakti Sagar",
+      "subscribers": 82800000,
+      "primary_language": "Hindi",
+      "category": "Music",
+      "country": "India",
+      "youtube_url": "https://www.youtube.com/channel/UCaayLD9i5x4MmIoVZxXSv_g",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 29,
+      "name": "Hybe Labels",
+      "subscribers": 82600000,
+      "primary_language": "Korean",
+      "category": "Music",
+      "country": "South Korea",
+      "youtube_url": "https://www.youtube.com/channel/UC3IZKseVpdzPSBaWxBxundA",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 30,
+      "name": "Colors TV",
+      "subscribers": 82400000,
+      "primary_language": "Hindi",
+      "category": "Entertainment",
+      "country": "India",
+      "youtube_url": "https://www.youtube.com/channel/UC55IWqFLDH1Xp7iu1_xknRA",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 31,
+      "name": "Tips Official",
+      "subscribers": 82300000,
+      "primary_language": "Hindi",
+      "category": "Entertainment",
+      "country": "India",
+      "youtube_url": "https://www.youtube.com/channel/UCJrDMFOdv1I2k8n9oK_V21w",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 32,
+      "name": "Mark Rober",
+      "subscribers": 81900000,
+      "primary_language": "English",
+      "category": "Education/Entertainment",
+      "country": "United States",
+      "youtube_url": "https://www.youtube.com/channel/UCY1kMZp36IQSyNx_9h4mpCg",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 33,
+      "name": "5-Minute Crafts",
+      "subscribers": 80600000,
+      "primary_language": "English",
+      "category": "How-to",
+      "country": "Cyprus",
+      "youtube_url": "https://www.youtube.com/channel/UC295-Dw_tDNtZXFeAPAW6Aw",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 34,
+      "name": "Zhong",
+      "subscribers": 80000000,
+      "primary_language": "English",
+      "category": "Entertainment",
+      "country": "United States China",
+      "youtube_url": "https://www.youtube.com/@zhong",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 35,
+      "name": "Justin Bieber",
+      "subscribers": 79300000,
+      "primary_language": "English",
+      "category": "Music",
+      "country": "Canada",
+      "youtube_url": "https://www.youtube.com/channel/UCIwFjwMjI0y7PDBVEO9-bkQ",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 36,
+      "name": "Fede Vigevani",
+      "subscribers": 78200000,
+      "primary_language": "Spanish",
+      "category": "Entertainment",
+      "country": "Mexico Uruguay",
+      "youtube_url": "https://www.youtube.com/channel/UCoQm-PeHC-cbJclKJYJ8LzA",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 37,
+      "name": "Bispo Bruno Leonardo",
+      "subscribers": 76500000,
+      "primary_language": "Portuguese",
+      "category": "Nonprofit",
+      "country": "Brazil",
+      "youtube_url": "https://www.youtube.com/@bispobrunoleonardo",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 38,
+      "name": "ISSEI / いっせい",
+      "subscribers": 75900000,
+      "primary_language": "Japanese",
+      "category": "Comedy",
+      "country": "Japan",
+      "youtube_url": "https://www.youtube.com/channel/UC6QZ_ss3i_8qLV_RczPZBkw",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 39,
+      "name": "Aaj Tak",
+      "subscribers": 75600000,
+      "primary_language": "Hindi",
+      "category": "News",
+      "country": "India",
+      "youtube_url": "https://www.youtube.com/channel/UCt4t-jeY85JegMlZ-E5UWtA",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 40,
+      "name": "Shemaroo Filmi Gaane",
+      "subscribers": 75000000,
+      "primary_language": "Hindi",
+      "category": "Music",
+      "country": "India",
+      "youtube_url": "https://www.youtube.com/channel/UCP6uH_XlsxrXwZQ4DlqbqPg",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 41,
+      "name": "Anaya Kandhal",
+      "subscribers": 74900000,
+      "primary_language": "Hindi",
+      "category": "Entertainment",
+      "country": "United States",
+      "youtube_url": "https://www.youtube.com/@anayakandhal",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 42,
+      "name": "HAR PAL GEO",
+      "subscribers": 74000000,
+      "primary_language": "Urdu",
+      "category": "Entertainment",
+      "country": "Pakistan",
+      "youtube_url": "https://www.youtube.com/channel/UCe9JSDmyqNgA_l2BzGHq1Ug",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 43,
+      "name": "Infobells - Hindi",
+      "subscribers": 72700000,
+      "primary_language": "Hindi",
+      "category": "Entertainment",
+      "country": "India",
+      "youtube_url": "https://www.youtube.com/channel/UC1ciY6kR3yj3kaKZ6R7ewAg",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 44,
+      "name": "Sony Music India",
+      "subscribers": 72700000,
+      "primary_language": "Hindi",
+      "category": "Music",
+      "country": "India",
+      "youtube_url": "https://www.youtube.com/channel/UC56gTxNs4f9xZ7Pa2i5xNzg",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 45,
+      "name": "YRF",
+      "subscribers": 72700000,
+      "primary_language": "Hindi",
+      "category": "Music",
+      "country": "India",
+      "youtube_url": "https://www.youtube.com/channel/UCbTLwN10NoCU4WDzLf1JMOA",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 46,
+      "name": "El Reino Infantil",
+      "subscribers": 71500000,
+      "primary_language": "Spanish",
+      "category": "Music",
+      "country": "Argentina",
+      "youtube_url": "https://www.youtube.com/channel/UCK1i2UviaXLUNrZlAFpw_jA",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 47,
+      "name": "YOLO AVENTURAS",
+      "subscribers": 70800000,
+      "primary_language": "Spanish",
+      "category": "Entertainment",
+      "country": "Mexico Venezuela",
+      "youtube_url": "https://www.youtube.com/@YOLOAVENTURAS",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 48,
+      "name": "Wave Music",
+      "subscribers": 70700000,
+      "primary_language": "Bhojpuri",
+      "category": "Music",
+      "country": "India",
+      "youtube_url": "https://www.youtube.com/channel/UC22nIfOTM7KLIQuFGMKzQbg",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 49,
+      "name": "ARY Digital HD",
+      "subscribers": 68400000,
+      "primary_language": "Urdu",
+      "category": "Entertainment",
+      "country": "Pakistan",
+      "youtube_url": "https://www.youtube.com/channel/UC4JCksJF76g_MdzPVBJoC3Q",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 50,
+      "name": "Canal KondZilla",
+      "subscribers": 68200000,
+      "primary_language": "Portuguese",
+      "category": "Music",
+      "country": "Brazil",
+      "youtube_url": "https://www.youtube.com/channel/UCffDXn7ycAzwL2LDlbyWOTw",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 51,
+      "name": "Eminem Music",
+      "subscribers": 67200000,
+      "primary_language": "English",
+      "category": "Music",
+      "country": "United States",
+      "youtube_url": "https://www.youtube.com/channel/UCfM3zsQsOnfWNUppiycmBuw",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 52,
+      "name": "Celine Dept",
+      "subscribers": 67100000,
+      "primary_language": "English",
+      "category": "Sports",
+      "country": "Belgium",
+      "youtube_url": "https://www.youtube.com/@celinedept",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 53,
+      "name": "Movieclips",
+      "subscribers": 66600000,
+      "primary_language": "English",
+      "category": "Film",
+      "country": "United States",
+      "youtube_url": "https://www.youtube.com/channel/UC3gNmTGu-TTbFPpfSs5kNkg",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 54,
+      "name": "Dangal TV Channel",
+      "subscribers": 65600000,
+      "primary_language": "Hindi",
+      "category": "Entertainment",
+      "country": "India",
+      "youtube_url": "https://www.youtube.com/@dangaltvchannel",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 55,
+      "name": "Saregama Music",
+      "subscribers": 64600000,
+      "primary_language": "Hindi",
+      "category": "Music",
+      "country": "India",
+      "youtube_url": "https://www.youtube.com/@saregamamusic",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 56,
+      "name": "Taylor Swift",
+      "subscribers": 63400000,
+      "primary_language": "English",
+      "category": "Music",
+      "country": "United States",
+      "youtube_url": "https://www.youtube.com/taylorswift",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 57,
+      "name": "Dude Perfect",
+      "subscribers": 62600000,
+      "primary_language": "English",
+      "category": "Comedy",
+      "country": "United States",
+      "youtube_url": "https://www.youtube.com/user/corycotton",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 58,
+      "name": "LooLoo Kids - Nursery Rhymes and Children's Songs",
+      "subscribers": 62500000,
+      "primary_language": "English",
+      "category": "Music",
+      "country": "Romania",
+      "youtube_url": "https://www.youtube.com/@loolookids",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 59,
+      "name": "PANDA BOI",
+      "subscribers": 62400000,
+      "primary_language": "English",
+      "category": "Gaming",
+      "country": "Italy",
+      "youtube_url": "https://www.youtube.com/@pandaboi",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 60,
+      "name": "Shemaroo",
+      "subscribers": 62200000,
+      "primary_language": "Hindi",
+      "category": "Entertainment",
+      "country": "India",
+      "youtube_url": "https://www.youtube.com/@shemaroo",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 61,
+      "name": "MrBeast 2",
+      "subscribers": 61600000,
+      "primary_language": "English",
+      "category": "Entertainment",
+      "country": "United States",
+      "youtube_url": "https://www.youtube.com/@mrbeast2",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 62,
+      "name": "IShowSpeed",
+      "subscribers": 61200000,
+      "primary_language": "English",
+      "category": "Entertainment",
+      "country": "United States",
+      "youtube_url": "https://www.youtube.com/@IShowSpeed",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 63,
+      "name": "आचार्य प्रशान्त - Acharya Prashant",
+      "subscribers": 60900000,
+      "primary_language": "Hindi",
+      "category": "Education",
+      "country": "India",
+      "youtube_url": "https://www.youtube.com/@shriprashant",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 64,
+      "name": "Маша и Медведь",
+      "subscribers": 60500000,
+      "primary_language": "Russian",
+      "category": "Education",
+      "country": "Russia",
+      "youtube_url": "https://www.youtube.com/@mashabearrussian",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 65,
+      "name": "Alfredo Larin",
+      "subscribers": 60200000,
+      "primary_language": "Spanish",
+      "category": "Entertainment",
+      "country": "El Salvador",
+      "youtube_url": "https://www.youtube.com/@alfredolarin",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 66,
+      "name": "SonyMusicIndiaVEVO",
+      "subscribers": 60100000,
+      "primary_language": "Hindi",
+      "category": "Music",
+      "country": "India",
+      "youtube_url": "https://www.youtube.com/@sonymusicindiavevo",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 67,
+      "name": "MrBeast Gaming",
+      "subscribers": 59700000,
+      "primary_language": "English",
+      "category": "Gaming",
+      "country": "United States",
+      "youtube_url": "https://www.youtube.com/@mrbeastgaming",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 68,
+      "name": "Ed Sheeran",
+      "subscribers": 59200000,
+      "primary_language": "English",
+      "category": "Music",
+      "country": "United Kingdom",
+      "youtube_url": "https://www.youtube.com/edsheeran",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 69,
+      "name": "ToRung",
+      "subscribers": 59200000,
+      "primary_language": "Vietnamese",
+      "category": "Comedy",
+      "country": "Vietnam",
+      "youtube_url": "https://www.youtube.com/@torung",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 70,
+      "name": "Marshmello",
+      "subscribers": 58700000,
+      "primary_language": "English",
+      "category": "Music",
+      "country": "United States",
+      "youtube_url": "https://www.youtube.com/@marshmello",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 71,
+      "name": "Mikecrack",
+      "subscribers": 58600000,
+      "primary_language": "Spanish",
+      "category": "Gaming",
+      "country": "Spain",
+      "youtube_url": "https://www.youtube.com/@mikecrack",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 72,
+      "name": "Billie Eilish",
+      "subscribers": 58500000,
+      "primary_language": "English",
+      "category": "Music",
+      "country": "United States",
+      "youtube_url": "https://www.youtube.com/billieeilish",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 73,
+      "name": "JioHotstar Kids",
+      "subscribers": 58500000,
+      "primary_language": "Hindi",
+      "category": "Entertainment",
+      "country": "India",
+      "youtube_url": "https://www.youtube.com/@jio_hotstar_kids",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 74,
+      "name": "Ariana Grande",
+      "subscribers": 58100000,
+      "primary_language": "English",
+      "category": "Music",
+      "country": "United States",
+      "youtube_url": "https://www.youtube.com/arianagrande",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 75,
+      "name": "Billion Surprise Toys",
+      "subscribers": 57700000,
+      "primary_language": "English",
+      "category": "Education",
+      "country": "United Arab Emirates",
+      "youtube_url": "https://www.youtube.com/@billionsurprisetoys",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 76,
+      "name": "Get Movies",
+      "subscribers": 57100000,
+      "primary_language": "Russian",
+      "category": "Entertainment",
+      "country": "Russia",
+      "youtube_url": "https://www.youtube.com/@getmovies",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 77,
+      "name": "StarPlus",
+      "subscribers": 56700000,
+      "primary_language": "Hindi",
+      "category": "Entertainment",
+      "country": "India",
+      "youtube_url": "https://www.youtube.com/starplus",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 78,
+      "name": "shfa",
+      "subscribers": 56600000,
+      "primary_language": "Arabic",
+      "category": "People",
+      "country": "United Arab Emirates",
+      "youtube_url": "https://www.youtube.com/@shfa-1",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 79,
+      "name": "JuegaGerman",
+      "subscribers": 56500000,
+      "primary_language": "Spanish",
+      "category": "Gaming",
+      "country": "Chile",
+      "youtube_url": "https://www.youtube.com/@juegagerman",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 80,
+      "name": "Juan de Dios Pantoja",
+      "subscribers": 56000000,
+      "primary_language": "Spanish",
+      "category": "People",
+      "country": "Mexico",
+      "youtube_url": "https://www.youtube.com/@juandediospantojaa",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 81,
+      "name": "Masha and the Bear",
+      "subscribers": 55500000,
+      "primary_language": "English",
+      "category": "Film",
+      "country": "Russia",
+      "youtube_url": "https://www.youtube.com/@mashabearen",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 82,
+      "name": "ABS-CBN Entertainment",
+      "subscribers": 55200000,
+      "primary_language": "Filipino",
+      "category": "Entertainment",
+      "country": "Philippines",
+      "youtube_url": "https://www.youtube.com/@abscbnentertainment",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 83,
+      "name": "HUM TV",
+      "subscribers": 55100000,
+      "primary_language": "Urdu",
+      "category": "Entertainment",
+      "country": "Pakistan",
+      "youtube_url": "https://www.youtube.com/@humtv",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 84,
+      "name": "Jess No Limit",
+      "subscribers": 54600000,
+      "primary_language": "Indonesian",
+      "category": "Gaming",
+      "country": "Indonesia",
+      "youtube_url": "https://www.youtube.com/@jessnolimit",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 85,
+      "name": "shfa2 - شفا",
+      "subscribers": 54200000,
+      "primary_language": "Arabic",
+      "category": "People",
+      "country": "United Arab Emirates",
+      "youtube_url": "https://www.youtube.com/@shfa2",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 86,
+      "name": "Ishtar Music",
+      "subscribers": 53800000,
+      "primary_language": "Hindi",
+      "category": "Music",
+      "country": "India",
+      "youtube_url": "https://www.youtube.com/@ishtarmusic",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 87,
+      "name": "Shakira",
+      "subscribers": 53800000,
+      "primary_language": "Spanish",
+      "category": "Music",
+      "country": "Colombia",
+      "youtube_url": "https://www.youtube.com/@Shakira",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 88,
+      "name": "T-Series Bollywood Classics",
+      "subscribers": 53700000,
+      "primary_language": "Hindi",
+      "category": "Film",
+      "country": "India",
+      "youtube_url": "https://www.youtube.com/@tseriesoldisgold",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 89,
+      "name": "LUCCAS NETO",
+      "subscribers": 53600000,
+      "primary_language": "Portuguese",
+      "category": "Entertainment",
+      "country": "Brazil",
+      "youtube_url": "https://www.youtube.com/@luccasneto",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 90,
+      "name": "Sierra & Rhia FAM",
+      "subscribers": 53500000,
+      "primary_language": "English",
+      "category": "Entertainment",
+      "country": "Canada",
+      "youtube_url": "https://www.youtube.com/@SierraRhiaFAM",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 91,
+      "name": "Bad Bunny",
+      "subscribers": 53200000,
+      "primary_language": "Spanish",
+      "category": "Music",
+      "country": "Puerto Rico",
+      "youtube_url": "https://www.youtube.com/@badbunnypr",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 92,
+      "name": "Techno Gamerz",
+      "subscribers": 53000000,
+      "primary_language": "Hindi",
+      "category": "Gaming",
+      "country": "India",
+      "youtube_url": "https://www.youtube.com/@TechnoGamerzOfficial",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 93,
+      "name": "MR. INDIAN HACKER",
+      "subscribers": 52900000,
+      "primary_language": "Hindi",
+      "category": "Entertainment",
+      "country": "India",
+      "youtube_url": "https://www.youtube.com/@MRINDIANHACKER",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 94,
+      "name": "Real fools shorts official",
+      "subscribers": 52900000,
+      "primary_language": "Hindi",
+      "category": "People",
+      "country": "India",
+      "youtube_url": "https://www.youtube.com/@realfoolsshorts63",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 95,
+      "name": "Karla Bustillos",
+      "subscribers": 52600000,
+      "primary_language": "Spanish",
+      "category": "Entertainment",
+      "country": "Mexico",
+      "youtube_url": "https://youtube.com/@karlabustillos",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 96,
+      "name": "BEN EAGLE",
+      "subscribers": 52000000,
+      "primary_language": "Vietnamese",
+      "category": "Entertainment",
+      "country": "Vietnam",
+      "youtube_url": "https://www.youtube.com/channel/UCbGPgvNunvclTypPtL3sa0w",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 97,
+      "name": "BETER BÖCÜK",
+      "subscribers": 51900000,
+      "primary_language": "Turkish",
+      "category": "Gaming",
+      "country": "Turkey",
+      "youtube_url": "https://www.youtube.com/@beterbocuk",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 98,
+      "name": "BeatboxJCOP",
+      "subscribers": 51800000,
+      "primary_language": "Korean",
+      "category": "Entertainment",
+      "country": "South Korea",
+      "youtube_url": "https://www.youtube.com/@BeatboxJCOP",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 99,
+      "name": "Ben Azelart",
+      "subscribers": 51300000,
+      "primary_language": "English",
+      "category": "Entertainment",
+      "country": "United States",
+      "youtube_url": "https://www.youtube.com/@BenAzelart",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    },
+    {
+      "rank": 100,
+      "name": "ABP NEWS",
+      "subscribers": 51200000,
+      "primary_language": "Hindi",
+      "category": "News",
+      "country": "India",
+      "youtube_url": "https://www.youtube.com/@abpnews",
+      "scraped_at": "2026-09-08T14:48:30.399292+00:00"
+    }
+  ]
+}

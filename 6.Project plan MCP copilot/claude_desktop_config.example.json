@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "analyst-copilot": {
+      "command": "C:\\Python314\\python.exe",
+      "args": [
+        "C:\\Users\\Bright\\OneDrive - Double A (1991) PCL\\Desktop\\Martech\\6.Project plan MCP copilot\\server.py"
+      ]
+    }
+  }
+}

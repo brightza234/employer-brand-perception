@@ -1,0 +1,51 @@
+{
+  "reliability": {
+    "facets": [
+      "JobSatisfaction",
+      "EnvironmentSatisfaction",
+      "RelationshipSatisfaction",
+      "WorkLifeBalance",
+      "JobInvolvement"
+    ],
+    "cronbachs_alpha": 0.0016,
+    "interpretation": "alpha >= 0.7 suggests the 5 facets move together as one wellbeing construct; a lower value suggests each facet is a fairly independent dimension rather than one underlying construct."
+  },
+  "themes": [
+    {
+      "theme": "Work-Life Balance",
+      "dataset_rank": 2,
+      "dataset_correlation_with_attrition": -0.0639,
+      "social_rank": 3,
+      "social_volume_share": 0.2679,
+      "social_avg_sentiment": -0.3735,
+      "social_n_comments": 296,
+      "rank_gap": 1
+    },
+    {
+      "theme": "Management/Relationship",
+      "dataset_rank": 3,
+      "dataset_correlation_with_attrition": -0.0459,
+      "social_rank": 1,
+      "social_volume_share": 0.3855,
+      "social_avg_sentiment": -0.5243,
+      "social_n_comments": 426,
+      "rank_gap": -2
+    },
+    {
+      "theme": "Career Growth",
+      "dataset_rank": 1,
+      "dataset_correlation_with_attrition": -0.13,
+      "social_rank": 2,
+      "social_volume_share": 0.3466,
+      "social_avg_sentiment": 0.267,
+      "social_n_comments": 383,
+      "rank_gap": 1
+    }
+  ],
+  "rank_agreement": {
+    "spearman_rho": -0.5,
+    "interpretation": "rho close to 1 means dataset-derived importance and social conversation volume rank themes the same way; close to -1 means they rank themes in opposite order; close to 0 means no relationship."
+  },
+  "n_dataset_rows": 1470,
+  "n_social_comments_classified": 1643
+}

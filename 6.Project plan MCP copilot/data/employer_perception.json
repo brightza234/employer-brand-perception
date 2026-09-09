@@ -1,0 +1,888 @@
+{
+  "generated_at": "2026-09-07T09:55:14.951841Z",
+  "companies": {
+    "Agoda": {
+      "total_comments": 186,
+      "total_raw_comments": 375,
+      "sentiment_distribution": {
+        "positive": 64,
+        "neutral": 104,
+        "negative": 16
+      },
+      "theme_distribution": {
+        "Compensation & Benefits": 20,
+        "Work-Life Balance": 8,
+        "Management & Leadership": 2,
+        "Career Growth & Development": 82,
+        "Company Culture": 40,
+        "Job Security & Stability": 18,
+        "Other": 16
+      },
+      "trend": [
+        {
+          "period": "2020-Q4",
+          "positive": 1,
+          "neutral": 8,
+          "negative": 0
+        },
+        {
+          "period": "2021-Q1",
+          "positive": 1,
+          "neutral": 1,
+          "negative": 2
+        },
+        {
+          "period": "2021-Q4",
+          "positive": 0,
+          "neutral": 1,
+          "negative": 0
+        },
+        {
+          "period": "2022-Q1",
+          "positive": 0,
+          "neutral": 3,
+          "negative": 0
+        },
+        {
+          "period": "2022-Q2",
+          "positive": 11,
+          "neutral": 1,
+          "negative": 0
+        },
+        {
+          "period": "2022-Q3",
+          "positive": 4,
+          "neutral": 2,
+          "negative": 1
+        },
+        {
+          "period": "2022-Q4",
+          "positive": 0,
+          "neutral": 4,
+          "negative": 0
+        },
+        {
+          "period": "2023-Q1",
+          "positive": 3,
+          "neutral": 0,
+          "negative": 0
+        },
+        {
+          "period": "2023-Q2",
+          "positive": 2,
+          "neutral": 0,
+          "negative": 0
+        },
+        {
+          "period": "2023-Q3",
+          "positive": 5,
+          "neutral": 0,
+          "negative": 0
+        },
+        {
+          "period": "2023-Q4",
+          "positive": 3,
+          "neutral": 3,
+          "negative": 0
+        },
+        {
+          "period": "2024-Q1",
+          "positive": 2,
+          "neutral": 3,
+          "negative": 0
+        },
+        {
+          "period": "2024-Q2",
+          "positive": 1,
+          "neutral": 1,
+          "negative": 1
+        },
+        {
+          "period": "2024-Q3",
+          "positive": 0,
+          "neutral": 8,
+          "negative": 0
+        },
+        {
+          "period": "2024-Q4",
+          "positive": 3,
+          "neutral": 10,
+          "negative": 2
+        },
+        {
+          "period": "2025-Q1",
+          "positive": 4,
+          "neutral": 11,
+          "negative": 2
+        },
+        {
+          "period": "2025-Q2",
+          "positive": 6,
+          "neutral": 7,
+          "negative": 0
+        },
+        {
+          "period": "2025-Q3",
+          "positive": 0,
+          "neutral": 11,
+          "negative": 2
+        },
+        {
+          "period": "2025-Q4",
+          "positive": 2,
+          "neutral": 8,
+          "negative": 0
+        },
+        {
+          "period": "2026-Q1",
+          "positive": 11,
+          "neutral": 10,
+          "negative": 4
+        },
+        {
+          "period": "2026-Q2",
+          "positive": 1,
+          "neutral": 8,
+          "negative": 1
+        },
+        {
+          "period": "2026-Q3",
+          "positive": 4,
+          "neutral": 4,
+          "negative": 1
+        }
+      ],
+      "sample_comments": {
+        "Company Culture": [
+          {
+            "text": "I really want to work at Agoda",
+            "sentiment": "positive",
+            "source": "youtube",
+            "url": "https://www.youtube.com/watch?v=bhREpdZ1-no&lc=UgyvHluVC7hMxTFVRUl4AaABAg"
+          },
+          {
+            "text": "Nice to see a healthy Thai middle class lifestyle.  A lot of us in tech rarely see our colleagues face to face, let alone socialise with them.",
+            "sentiment": "positive",
+            "source": "youtube",
+            "url": "https://www.youtube.com/watch?v=b4MSCzWKgYw&lc=Ugw_tvImeBVtVvwNEuh4AaABAg"
+          },
+          {
+            "text": "Awesomely WOW! You are soooo lucky to work in the best spot in the world. Thailand!",
+            "sentiment": "positive",
+            "source": "youtube",
+            "url": "https://www.youtube.com/watch?v=b4MSCzWKgYw&lc=Ugzdg0W-AYFBfi7_eiN4AaABAg"
+          }
+        ],
+        "Management & Leadership": [
+          {
+            "text": "Agoda CEO to Lead Booking Holdings’ New B2B Unit, New Tech Details: Scoop\n\nBooking Holdings informed employees that Agoda CEO Omri Morgenshtern will take on the additional title of CEO of its consolidated B2B unit.",
+            "sentiment": "neutral",
+            "source": "news",
+            "url": "https://skift.com/2026/08/10/booking-holdings-makes-leadership-appointments-tied-to-new-b2b-unit-as-partners-get-onboarded-scoop/"
+          },
+          {
+            "text": "Hi James!  I am beginning the interviewing process for a Technical Talent Acquisitions Partner with Agoda at this time.  I take the assessment test tomorrow, bright and early!  I am spending today getting to know Agoda and the people that work there.  You have done a brilliant job with these videos and your passion and professionalism stands out naturally!  I see that it has been a year since this video has been posted...have you taken any steps towards your goal to become a People Leader or bet",
+            "sentiment": "positive",
+            "source": "youtube",
+            "url": "https://www.youtube.com/watch?v=6xcH6cdh7LI&lc=UgwbowxltHKypF1ggg14AaABAg"
+          }
+        ],
+        "Career Growth & Development": [
+          {
+            "text": "ประสบการณ์สอบ agoda ตอนเจอ leet code ใน live coding คือตุย แถมสำเนียงอินเดียของผู้สัมฯ ก็ฟังยาก แต่เค้าก็พยายามช่วยเยอะ\nเผื่อใครผ่านไปมาและสนใจ สิ่งสำคัญมากๆ ของการสอบคือ ภาษาและการเรียบเรียงความคิดออกมาเป็นคำพูด",
+            "sentiment": "negative",
+            "source": "youtube",
+            "url": "https://www.youtube.com/watch?v=jdaJ-AzTjEU&lc=UgwB_we3Dx_My8gEKNB4AaABAg"
+          },
+          {
+            "text": "Started watching out of curiosity... finished convinced I should definitely be applying for a Product Manager role at Agoda Bangkok. 😂 Loved the vlog!",
+            "sentiment": "positive",
+            "source": "youtube",
+            "url": "https://www.youtube.com/watch?v=b4MSCzWKgYw&lc=UgzgW8eUjSPePLsdBoJ4AaABAg"
+          },
+          {
+            "text": "The Spark to contribute in such a big organization has been ignited, thanks for sharing the Info brother",
+            "sentiment": "positive",
+            "source": "youtube",
+            "url": "https://www.youtube.com/watch?v=IryEj2oekW8&lc=UgypO3NSxjDMKGbuOIh4AaABAg"
+          }
+        ],
+        "Work-Life Balance": [
+          {
+            "text": "Hi Di, Can you suggest a neighbourhood which is not too far from office and not too expensive?",
+            "sentiment": "neutral",
+            "source": "youtube",
+            "url": "https://www.youtube.com/watch?v=b4MSCzWKgYw&lc=UgwPHDNe1v2KF95ATuV4AaABAg"
+          },
+          {
+            "text": "Why are there no people at the office, is it ok to work from home most of the time?",
+            "sentiment": "neutral",
+            "source": "youtube",
+            "url": "https://www.youtube.com/watch?v=fh_dFzfbJdg&lc=UgweETBDHWtClV8Wtrt4AaABAg"
+          },
+          {
+            "text": "Oh, wow, that's so cool! I've subscribed! \nI work on the digital (performance) marketing team for a large Russian product (I'm from Russia), similar to Agoda (we also have an app and website where you can buy plane or train tickets and book hotels). But my company allows to work remotely from anywhere in the world, so I've been in Bangkok for six months now :)",
+            "sentiment": "positive",
+            "source": "youtube",
+            "url": "https://www.youtube.com/watch?v=b4MSCzWKgYw&lc=UgwQlfAobToeBQXE_OB4AaABAg"
+          }
+        ],
+        "Other": [
+          {
+            "text": "How many days gap between coding round and system design round?",
+            "sentiment": "neutral",
+            "source": "youtube",
+            "url": "https://www.youtube.com/watch?v=IryEj2oekW8&lc=Ugz50VUKTIXVcEjifR54AaABAg"
+          },
+          {
+            "text": "Has anyone from Brazil been hired by this company?",
+            "sentiment": "neutral",
+            "source": "youtube",
+            "url": "https://www.youtube.com/watch?v=bhREpdZ1-no&lc=UgwP3eCq3xiwCIwfZAd4AaABAg"
+          },
+          {
+            "text": "Hey thanks for the top, do they grill a lot about why do you want to relocate?",
+            "sentiment": "neutral",
+            "source": "youtube",
+            "url": "https://www.youtube.com/watch?v=IryEj2oekW8&lc=UgwuHRWrsOn94t3QhtB4AaABAg"
+          }
+        ],
+        "Job Security & Stability": [
+          {
+            "text": "Are you still in Agoda?",
+            "sentiment": "neutral",
+            "source": "youtube",
+            "url": "https://www.youtube.com/watch?v=SFuNWvkaEUs&lc=UgwNfAMoxaF7-0t1lTp4AaABAg"
+          },
+          {
+            "text": "Does all the rounds happen in one day only? If not within how many days you can expect the next round?",
+            "sentiment": "neutral",
+            "source": "youtube",
+            "url": "https://www.youtube.com/watch?v=IryEj2oekW8&lc=UgxIF-Ulampn8xg2hV94AaABAg"
+          },
+          {
+            "text": "Do you have to have a degree?",
+            "sentiment": "neutral",
+            "source": "youtube",
+            "url": "https://www.youtube.com/watch?v=fh_dFzfbJdg&lc=Ugz9EQXUUbbzm1LUWA14AaABAg"
+          }
+        ],
+        "Compensation & Benefits": [
+          {
+            "text": "70-80lpa in inr or thai baht? and your experience",
+            "sentiment": "neutral",
+            "source": "youtube",
+            "url": "https://www.youtube.com/watch?v=-4tjwZM3lS4&lc=UgxhjfVM4pTsaXwRdeB4AaABAg"
+          },
+          {
+            "text": "Will there be no free food provided by Agoda bro ?",
+            "sentiment": "negative",
+            "source": "youtube",
+            "url": "https://www.youtube.com/watch?v=fh_dFzfbJdg&lc=UgyWix_2J8rwCHIIcgp4AaABAg"
+          },
+          {
+            "text": "bhai, mahine ka kitna kharcha aata hai vaha rahne khane aur travel sab mila kar ek jane ka?",
+            "sentiment": "neutral",
+            "source": "youtube",
+            "url": "https://www.youtube.com/watch?v=fh_dFzfbJdg&lc=UgxoC8j65af9eYRfDW54AaABAg"
+          }
+        ]
+      }
+    },
+    "Shopee Thailand": {
+      "total_comments": 130,
+      "total_raw_comments": 387,
+      "sentiment_distribution": {
+        "positive": 21,
+        "neutral": 46,
+        "negative": 63
+      },
+      "theme_distribution": {
+        "Compensation & Benefits": 33,
+        "Work-Life Balance": 13,
+        "Management & Leadership": 11,
+        "Career Growth & Development": 18,
+        "Company Culture": 10,
+        "Job Security & Stability": 26,
+        "Other": 19
+      },
+      "trend": [
+        {
+          "period": "2020-Q3",
+          "positive": 0,
+          "neutral": 1,
+          "negative": 1
+        },
+        {
+          "period": "2020-Q4",
+          "positive": 0,
+          "neutral": 2,
+          "negative": 0
+        },
+        {
+          "period": "2021-Q1",
+          "positive": 0,
+          "neutral": 2,
+          "negative": 0
+        },
+        {
+          "period": "2021-Q2",
+          "positive": 0,
+          "neutral": 6,
+          "negative": 0
+        },
+        {
+          "period": "2021-Q3",
+          "positive": 1,
+          "neutral": 6,
+          "negative": 0
+        },
+        {
+          "period": "2021-Q4",
+          "positive": 3,
+          "neutral": 6,
+          "negative": 3
+        },
+        {
+          "period": "2022-Q1",
+          "positive": 1,
+          "neutral": 1,
+          "negative": 1
+        },
+        {
+          "period": "2022-Q2",
+          "positive": 4,
+          "neutral": 4,
+          "negative": 8
+        },
+        {
+          "period": "2022-Q3",
+          "positive": 1,
+          "neutral": 4,
+          "negative": 4
+        },
+        {
+          "period": "2022-Q4",
+          "positive": 1,
+          "neutral": 0,
+          "negative": 2
+        },
+        {
+          "period": "2023-Q1",
+          "positive": 0,
+          "neutral": 1,
+          "negative": 0
+        },
+        {
+          "period": "2023-Q4",
+          "positive": 2,
+          "neutral": 2,
+          "negative": 1
+        },
+        {
+          "period": "2024-Q1",
+          "positive": 0,
+          "neutral": 2,
+          "negative": 1
+        },
+        {
+          "period": "2024-Q2",
+          "positive": 2,
+          "neutral": 2,
+          "negative": 0
+        },
+        {
+          "period": "2024-Q3",
+          "positive": 1,
+          "neutral": 0,
+          "negative": 0
+        },
+        {
+          "period": "2024-Q4",
+          "positive": 0,
+          "neutral": 1,
+          "negative": 0
+        },
+        {
+          "period": "2025-Q1",
+          "positive": 1,
+          "neutral": 1,
+          "negative": 1
+        },
+        {
+          "period": "2025-Q2",
+          "positive": 0,
+          "neutral": 1,
+          "negative": 9
+        },
+        {
+          "period": "2025-Q3",
+          "positive": 1,
+          "neutral": 1,
+          "negative": 6
+        },
+        {
+          "period": "2025-Q4",
+          "positive": 3,
+          "neutral": 0,
+          "negative": 16
+        },
+        {
+          "period": "2026-Q1",
+          "positive": 0,
+          "neutral": 0,
+          "negative": 4
+        },
+        {
+          "period": "2026-Q2",
+          "positive": 0,
+          "neutral": 3,
+          "negative": 4
+        },
+        {
+          "period": "2026-Q3",
+          "positive": 0,
+          "neutral": 0,
+          "negative": 2
+        }
+      ],
+      "sample_comments": {
+        "Management & Leadership": [
+          {
+            "text": "เป็นบริษัทที่มีธรรมาภิบาลสู๊งสูง มีปัญหาผ่านแพลตฟอร์ม แอดมินตอบกลับอย่างเดียวว่า\"ไม่รู้ๆ\"😅",
+            "sentiment": "negative",
+            "source": "youtube",
+            "url": "https://www.youtube.com/watch?v=NADjIcKEiWQ&lc=UgxvPrt_LSqVkjQN57R4AaABAg"
+          },
+          {
+            "text": "Itulah gunanya serikat pekerja...salah satunya sebenarnya membela buruh seperti ini,tapi sayang banyak yg menyinyir....",
+            "sentiment": "negative",
+            "source": "youtube",
+            "url": "https://www.youtube.com/watch?v=C5qpWkuXCws&lc=UgxDnVs5m_vvc8AMTTB4AaABAg"
+          },
+          {
+            "text": "Di shopee kebanyakan vemdor vendor .\nYg se enak nya potong potong gaji claiman .ayo manejemen shopee audit itu vendor vendor",
+            "sentiment": "negative",
+            "source": "youtube",
+            "url": "https://www.youtube.com/watch?v=C5qpWkuXCws&lc=Ugx45j-RdpfNFqPuaK94AaABAg"
+          }
+        ],
+        "Compensation & Benefits": [
+          {
+            "text": "Jgn percaya  ya hoak ha ada gaji karyawan di bicarakan tahadiaan perusahaan ini di siarkan awas waspada hoak",
+            "sentiment": "negative",
+            "source": "youtube",
+            "url": "https://www.youtube.com/watch?v=ywG9nhhDaks&lc=Ugw_uaKWqw2F4Df9wZl4AaABAg"
+          },
+          {
+            "text": "Bagi pengalamannya dong ko suami saya berangkat dri jam 7 pagi pulang jam 10 malem dapetnya cuma 2 orderan, total 39.000 potong bensin 30000 karena jauh banget. Untung cuma 9000 capeknya pake banget. Suamiku driver shopee food",
+            "sentiment": "negative",
+            "source": "youtube",
+            "url": "https://www.youtube.com/watch?v=Aw2_p4gVgH8&lc=Ugx1uQbP_12tmMEeDgl4AaABAg"
+          },
+          {
+            "text": "Mending mana Shopee food driver sama grab dan indrive",
+            "sentiment": "neutral",
+            "source": "youtube",
+            "url": "https://www.youtube.com/watch?v=Aw2_p4gVgH8&lc=UgwmpCVqStBNdx7N1V14AaABAg"
+          }
+        ],
+        "Job Security & Stability": [
+          {
+            "text": "pernah dapet yg aneh2 ga bang? kayak order fiktif sama ke area yg berbahaya gitu...",
+            "sentiment": "negative",
+            "source": "youtube",
+            "url": "https://www.youtube.com/watch?v=Aw2_p4gVgH8&lc=Ugwevy7yj1i1Zzi0M6d4AaABAg"
+          },
+          {
+            "text": "ต้องสมัครใหม่ทุกเดือนไหมคะ",
+            "sentiment": "neutral",
+            "source": "youtube",
+            "url": "https://www.youtube.com/watch?v=45vsVfWuqtw&lc=Ugwdfn1ktjpJKxPqwb94AaABAg"
+          },
+          {
+            "text": "Buat semua kurir w doain biar rejeki lancar dapet kerja lebih baik\nDi Indonesia doang kurir keblangsak pemerintah sibuk cawe cawe sama korup lupa mikirin rakyat \n\nAplikasi aplikasi online bikin ancur pedagang kecil pabrik2 cukong bisa langsung jual ke costumer....perang dagang\nPemerintah idiot \n#vira\n#indonesia",
+            "sentiment": "negative",
+            "source": "youtube",
+            "url": "https://www.youtube.com/watch?v=Aw2_p4gVgH8&lc=UgzZ2bbKczBAc5kqudp4AaABAg"
+          }
+        ],
+        "Company Culture": [
+          {
+            "text": "banyak yg ngeluh😂😂😂😂\n\nAQ dl buka usaha tiap hari pulang jam 10 keatas rasa nya pengen ngeluh ..bangkrut setelah kovid...😅😅😅. sekarang JD driper ngeluh juga .😂😂😂😂 hidup memang sandiwara😅😅😅😅😅 intinya harus Bersyukur dan menikmati apa yg kita jalani sekarang😂😂😂😂😂😂",
+            "sentiment": "neutral",
+            "source": "youtube",
+            "url": "https://www.youtube.com/watch?v=Aw2_p4gVgH8&lc=UgzAKbGcF6ZHfUCh-TR4AaABAg"
+          },
+          {
+            "text": "Feodalisme tenaga kerja di negeri sendiri",
+            "sentiment": "negative",
+            "source": "youtube",
+            "url": "https://www.youtube.com/watch?v=C5qpWkuXCws&lc=Ugy2DmqdsLbyP8g1fO94AaABAg"
+          },
+          {
+            "text": "KEJAM DUNIA KERJA DI INDONESIA SAAT INI..\nSHOPEE ADALAH SALAH SATU NYA..\n\nKITA MENUNGGU PEMIMPIN YANG BENAR-BENAR BERANI MERUBAH NASIB BANGSA DAN NEGERI YANG KITA CINTAI..",
+            "sentiment": "negative",
+            "source": "youtube",
+            "url": "https://www.youtube.com/watch?v=C5qpWkuXCws&lc=UgzuIKr9BNuqGdb6v0p4AaABAg"
+          }
+        ],
+        "Work-Life Balance": [
+          {
+            "text": "Pemerintah harus hadir untuk regulasi kerja seperti ini. Tdk manusiawi",
+            "sentiment": "negative",
+            "source": "youtube",
+            "url": "https://www.youtube.com/watch?v=C5qpWkuXCws&lc=UgxBRzTDk2E4D4zVkTJ4AaABAg"
+          },
+          {
+            "text": "Parah bener,,laki coba2 kurir shopee sfx,,,capek yah minta ampunn😂😂😂",
+            "sentiment": "negative",
+            "source": "youtube",
+            "url": "https://www.youtube.com/watch?v=Aw2_p4gVgH8&lc=UgyH68vNf2drYH2cp9R4AaABAg"
+          },
+          {
+            "text": "Kebetulan saya pernah kerja disana, memang jam kerjanya itu 9 jam kerja 1 jam istirahat total 10 jam, belum lagi jarak pergi-pulang 1 jam total 11 jam kerja!!, pernah nyoba Duduk dilantai tp dimarahin😢, trus bnyk juga barang yang dilempar sampe rusak, diinjak-injak tanpa rasa bersalah, dll, alhasil saya kerja cuma tahan 3 hari saja lepas itu mengundurkan diri, bukan karena mental saya lemah melainkan karena jam kerja+gajinya tidak sebanding dengan usaha yang saya keluarkan😊🎉",
+            "sentiment": "negative",
+            "source": "youtube",
+            "url": "https://www.youtube.com/watch?v=C5qpWkuXCws&lc=UgyEXwJM_YLcWeTgkkZ4AaABAg"
+          }
+        ],
+        "Other": [
+          {
+            "text": "ตำแหน่งนี้ใช้ภาษาอังกฤษไหมครับในการทำงาน",
+            "sentiment": "neutral",
+            "source": "youtube",
+            "url": "https://www.youtube.com/watch?v=_3jtOl8lO-s&lc=Ugzty53btcSkBOrLkhd4AaABAg"
+          },
+          {
+            "text": "** เดียร์อัพเดตวิธีการสมัครล่าสุด 2025 ไว้ให้แล้วน้า ดูจากคลิปนี้ได้เลยค่า 🥰\nhttps://youtu.be/3Mhf5GQYrlk?si=Zrf5SZjSfcFSxfgu\n** ใครติดปัญหาการทำดูคลิปนี้ได้เลยน้า\nhttps://youtu.be/z7HSRG9IVPc?si=MteQasvYFni455Ab",
+            "sentiment": "positive",
+            "source": "youtube",
+            "url": "https://www.youtube.com/watch?v=07AcCQU7vSg&lc=UgxBOAaYCUHgP7nBvEx4AaABAg"
+          },
+          {
+            "text": "cara ngelamar kerjanya gmn bg",
+            "sentiment": "neutral",
+            "source": "youtube",
+            "url": "https://www.youtube.com/watch?v=ywG9nhhDaks&lc=Ugy7Ajcn1k5wq1ckDzx4AaABAg"
+          }
+        ],
+        "Career Growth & Development": [
+          {
+            "text": "ขอบคุณสำหรับข้อมูลดีๆค่ะ เริ่มสมัครแล้ววันนี้ shopee ก็ยืนยันการลงทะเบียนให้เลยค่ะ มัน Wow!มาก ติดตามแล้วนะคะ ^__^",
+            "sentiment": "positive",
+            "source": "youtube",
+            "url": "https://www.youtube.com/watch?v=07AcCQU7vSg&lc=UgzU0P8SC7otKiM40Cx4AaABAg"
+          },
+          {
+            "text": "สมัครปุ๊บ ผ่านทันทีเลยครับ ขอบคุณคำแนะนำดีๆครับ",
+            "sentiment": "positive",
+            "source": "youtube",
+            "url": "https://www.youtube.com/watch?v=07AcCQU7vSg&lc=UgzHMyH-emVTwqPQjlZ4AaABAg"
+          },
+          {
+            "text": "ขอบคุณมากค่ะ สมัครง่ายมาก ตกใจมากไม่ถึง 1 นาทีอนุมัติแล้ว",
+            "sentiment": "positive",
+            "source": "youtube",
+            "url": "https://www.youtube.com/watch?v=07AcCQU7vSg&lc=UgyPn2J-KOTSthv1nRR4AaABAg"
+          }
+        ]
+      }
+    },
+    "Grab Thailand": {
+      "total_comments": 102,
+      "total_raw_comments": 484,
+      "sentiment_distribution": {
+        "positive": 16,
+        "neutral": 28,
+        "negative": 58
+      },
+      "theme_distribution": {
+        "Compensation & Benefits": 39,
+        "Work-Life Balance": 19,
+        "Management & Leadership": 5,
+        "Career Growth & Development": 16,
+        "Company Culture": 11,
+        "Job Security & Stability": 9,
+        "Other": 3
+      },
+      "trend": [
+        {
+          "period": "2021-Q2",
+          "positive": 1,
+          "neutral": 0,
+          "negative": 0
+        },
+        {
+          "period": "2021-Q3",
+          "positive": 0,
+          "neutral": 1,
+          "negative": 1
+        },
+        {
+          "period": "2021-Q4",
+          "positive": 0,
+          "neutral": 0,
+          "negative": 1
+        },
+        {
+          "period": "2022-Q1",
+          "positive": 0,
+          "neutral": 1,
+          "negative": 0
+        },
+        {
+          "period": "2022-Q2",
+          "positive": 0,
+          "neutral": 2,
+          "negative": 0
+        },
+        {
+          "period": "2022-Q4",
+          "positive": 0,
+          "neutral": 0,
+          "negative": 1
+        },
+        {
+          "period": "2023-Q1",
+          "positive": 1,
+          "neutral": 0,
+          "negative": 3
+        },
+        {
+          "period": "2023-Q2",
+          "positive": 0,
+          "neutral": 0,
+          "negative": 11
+        },
+        {
+          "period": "2023-Q3",
+          "positive": 0,
+          "neutral": 0,
+          "negative": 4
+        },
+        {
+          "period": "2023-Q4",
+          "positive": 0,
+          "neutral": 0,
+          "negative": 1
+        },
+        {
+          "period": "2024-Q1",
+          "positive": 0,
+          "neutral": 1,
+          "negative": 1
+        },
+        {
+          "period": "2024-Q2",
+          "positive": 1,
+          "neutral": 1,
+          "negative": 3
+        },
+        {
+          "period": "2024-Q3",
+          "positive": 1,
+          "neutral": 0,
+          "negative": 1
+        },
+        {
+          "period": "2024-Q4",
+          "positive": 6,
+          "neutral": 0,
+          "negative": 3
+        },
+        {
+          "period": "2025-Q1",
+          "positive": 2,
+          "neutral": 1,
+          "negative": 3
+        },
+        {
+          "period": "2025-Q2",
+          "positive": 1,
+          "neutral": 0,
+          "negative": 1
+        },
+        {
+          "period": "2025-Q3",
+          "positive": 0,
+          "neutral": 3,
+          "negative": 4
+        },
+        {
+          "period": "2025-Q4",
+          "positive": 1,
+          "neutral": 5,
+          "negative": 10
+        },
+        {
+          "period": "2026-Q1",
+          "positive": 1,
+          "neutral": 2,
+          "negative": 1
+        },
+        {
+          "period": "2026-Q2",
+          "positive": 0,
+          "neutral": 8,
+          "negative": 5
+        },
+        {
+          "period": "2026-Q3",
+          "positive": 1,
+          "neutral": 3,
+          "negative": 4
+        }
+      ],
+      "sample_comments": {
+        "Career Growth & Development": [
+          {
+            "text": "Any suggestions for L2 Support? I hardly see any contents for this designation",
+            "sentiment": "neutral",
+            "source": "youtube",
+            "url": "https://www.youtube.com/watch?v=GjANvHle2Q8&lc=Ugw2N_pa_dGD4dXFWaN4AaABAg"
+          },
+          {
+            "text": "เริ่มวิ่งเปิดรับงานอะไรดีครับ",
+            "sentiment": "neutral",
+            "source": "youtube",
+            "url": "https://www.youtube.com/watch?v=fXGFOBUS1Y0&lc=UgzTkPxKmDg0lkmN-VR4AaABAg"
+          },
+          {
+            "text": "ผมพึ่งสมัครใหม่ไม่มีแกร็ปวิน แก้ไขยังไงได้บ้างครับ",
+            "sentiment": "neutral",
+            "source": "youtube",
+            "url": "https://www.youtube.com/watch?v=rrdkuMhK6SI&lc=Ugz7Ux0fxff_PXZ63yd4AaABAg"
+          }
+        ],
+        "Work-Life Balance": [
+          {
+            "text": "วันนี้ลา 1 วันเหนื่อยๆล้าๆยังไงไม่รู้😂❤",
+            "sentiment": "negative",
+            "source": "youtube",
+            "url": "https://www.youtube.com/watch?v=inHdXwmJU_4&lc=UgwdOzZw8wyjYJ_Z_M94AaABAg"
+          },
+          {
+            "text": "\"Hope you dont have to hold your bladder because its time for CARREER LADDER\"",
+            "sentiment": "negative",
+            "source": "youtube",
+            "url": "https://www.youtube.com/watch?v=_1Cl_K5E7yg&lc=Ugx8a69es22PHBZ9KHl4AaABAg"
+          },
+          {
+            "text": "ผมวิ่งงานเยอะมากๆ เมื่อวานได้12รอบ เมื่อไหร่จะได้กระเป๋า?? ผมวิ่ง11:00น -03:00น ทุกวัน ที่ปทุมธานี งานน้อย เดี๋ยวจะย้ายเข้า กทม แล้ว",
+            "sentiment": "negative",
+            "source": "youtube",
+            "url": "https://www.youtube.com/watch?v=PKXIEuo63GQ&lc=UgxGpwmOZC6w5bLACjd4AaABAg"
+          }
+        ],
+        "Company Culture": [
+          {
+            "text": "An incredible documentary. I visited Bali last month and stayed in Canggu. The Grab drivers were some of the kindest people I met. You could really see how hard they work, especially wearing those heavy Grab jackets in the intense heat every day. It gave me even more respect for everything they do. This documentary does a great job of showing the reality behind their work and the challenges they face.",
+            "sentiment": "positive",
+            "source": "youtube",
+            "url": "https://www.youtube.com/watch?v=IrivUg29psY&lc=UgwMHYtBPc3qFlKFeml4AaABAg"
+          },
+          {
+            "text": "Anyone here from the career ladder?",
+            "sentiment": "neutral",
+            "source": "youtube",
+            "url": "https://www.youtube.com/watch?v=_1Cl_K5E7yg&lc=UgyT7V3aO9oDlb6-1Rt4AaABAg"
+          },
+          {
+            "text": "Without drivers, Grab don't exist. Sadly he forgotten them.",
+            "sentiment": "negative",
+            "source": "youtube",
+            "url": "https://www.youtube.com/watch?v=_1Cl_K5E7yg&lc=Ugw9JEzC6xQ1nCFo0ll4AaABAg"
+          }
+        ],
+        "Compensation & Benefits": [
+          {
+            "text": "อานาจักรสูบเงินล้าน บนหลังคน  ต้นทุนไรเดอร์สูงฉิบหายแต่มึงจ่ายให้แค่ค่าหยอดน้ำมันโซ่รถ",
+            "sentiment": "negative",
+            "source": "youtube",
+            "url": "https://www.youtube.com/watch?v=FF8fSztZ_DM&lc=UgzAOB9jOFc_wWhrDVB4AaABAg"
+          },
+          {
+            "text": "ต้องเติมเครดิตเข้าเท่าไหร่ครับแล้วอันนี้รายได้ที่หักเปอร์เซ็นต์ใช่ไหมครับที่เงินเข้ากระเป๋าเรา",
+            "sentiment": "neutral",
+            "source": "youtube",
+            "url": "https://www.youtube.com/watch?v=ARNTzIMYdR0&lc=UgztzqabQegsSzAK9jV4AaABAg"
+          },
+          {
+            "text": "Yes, now he's making most Grab drivers suffer with low income driving Grab.",
+            "sentiment": "negative",
+            "source": "youtube",
+            "url": "https://www.youtube.com/watch?v=_1Cl_K5E7yg&lc=Ugxg6g7bkRIbhKvN5wJ4AaABAg"
+          }
+        ],
+        "Job Security & Stability": [
+          {
+            "text": "ศูนย์โทรแจ้งมาว่า ผ่านแล้ว ให้โหลดแอปมาแล้วเข้าระบบรับงานได้ทันที แต่โหลดแอปมาแล้ว หน้างานแอปไม่เปิด เป็นหน้าลงผู้สมัครใหม่ ได้กลับไปติดต่อที่ศูนย์แล้ว พนักงานเช็คระบบเสร็จ บอกเราว่า บ่ายๆนี้เปิดแอปแล้วใช้งานได้ทันที แต่รอแล้วรออีก แอปก็ไม่เปิด เป็นเพราะเหตุใด",
+            "sentiment": "negative",
+            "source": "youtube",
+            "url": "https://www.youtube.com/watch?v=mdqCfyihTRc&lc=Ugwck5c65AkAH9xjDIR4AaABAg"
+          },
+          {
+            "text": "พี่ครับถ้าผมสมัครที่สงขลา แล้วไปขับที่กรุงเทพฯได้ไหม",
+            "sentiment": "neutral",
+            "source": "youtube",
+            "url": "https://www.youtube.com/watch?v=PKXIEuo63GQ&lc=Ugz8yvTdzBpfFJ1iBYZ4AaABAg"
+          },
+          {
+            "text": "ผมกำลังจะเริ่มสมัครทำเลยครับอยู่จังหวัดเพรชบุรี(ว่าเเต่ไปส่งยากไหมครับพอดีไม่รู้เลย😅)",
+            "sentiment": "neutral",
+            "source": "youtube",
+            "url": "https://www.youtube.com/watch?v=Lb91XLZdfC8&lc=UgwzDAnd_zG8uKdUDd14AaABAg"
+          }
+        ],
+        "Other": [
+          {
+            "text": "สอบถามหน่อยคับ ตอนพี่ไปสมัคร พี่ไปสมัครที่สำนักงาน ที่จังหวัด ตัวเอง หรือสมัครผ่านโทรศัพท์คับ",
+            "sentiment": "neutral",
+            "source": "youtube",
+            "url": "https://www.youtube.com/watch?v=Lb91XLZdfC8&lc=UgzHrII_-QTGw0QPeb14AaABAg"
+          },
+          {
+            "text": "ขอสอบถามเพิ่มเติมนะครับ พอดีผมได้สมัครไปแล้ว แต่ไม่เคยได้ขับเพราะทำงานประจำ พอดีเปลี่ยนโทรศัพท์ใหม่ไม่ได้ใช้อีเมล์เดิม ต้องทำยังไงหรือต้องติดต่อไปยังสำนักงานใหญ่อย่างเดียวครับขอบคุณครับ",
+            "sentiment": "neutral",
+            "source": "youtube",
+            "url": "https://www.youtube.com/watch?v=mdqCfyihTRc&lc=UgyK0aNBkuAkEGRLGYV4AaABAg"
+          },
+          {
+            "text": "แนะให้ทำระบบที่ พาทเนอร์ เข้าถึง  Call Center ได้ง่ายกว่านี้.  พอมีปัญหาจะติดต่อก้แสนยาก",
+            "sentiment": "negative",
+            "source": "youtube",
+            "url": "https://www.youtube.com/watch?v=mdqCfyihTRc&lc=UgyojoI5r5GlWrquVVp4AaABAg"
+          }
+        ],
+        "Management & Leadership": [
+          {
+            "text": "ไม่ต้องทำอะไร เพราะไม่ผิดแต่เรื่องนี้อย่างเดียว ผิดทุกตรง เบื่อที่จะแนะนำแล้ว มันเป็นทั้งองค์กร แก้ไขอะไรไม่ได้😢😢😢",
+            "sentiment": "negative",
+            "source": "youtube",
+            "url": "https://www.youtube.com/watch?v=4dAsO53jU-4&lc=UgwHP5I0NH045AHDv5N4AaABAg"
+          },
+          {
+            "text": "3:40 Really admire that he went down to the factory floor and expressed gratitude to the folk who worked for his family company. I’ve worked in an enterprise owned by one of Asias richest family for over a decade. Almost no third generation family member did what he did so it is a really admirable thing. 😮",
+            "sentiment": "positive",
+            "source": "youtube",
+            "url": "https://www.youtube.com/watch?v=PR2194ddosg&lc=Ugzq6Tm_eVANl8aRbjt4AaABAg"
+          },
+          {
+            "text": "Make sure your face is at least OK looking. Below that, Grab Driver might cancel immediately 😂",
+            "sentiment": "negative",
+            "source": "youtube",
+            "url": "https://www.youtube.com/watch?v=ynF9FuwlmvM&lc=Ugzjh5FyrGntOuF-umR4AaABAg"
+          }
+        ]
+      }
+    }
+  },
+  "chi_square_theme_test": {
+    "chi2": 107.8602,
+    "p_value": 0.0,
+    "degrees_of_freedom": 12,
+    "significant_at_0.05": true,
+    "note": "tests whether theme distribution differs significantly across companies"
+  }
+}
